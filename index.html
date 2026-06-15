@@ -6,36 +6,42 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mai home</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body style="background-color: #e6e6e6">
-    <header
-      style="
-        position: sticky;
-        top: 24px;
-        z-index: 100;
-        background-color: rgba(255, 255, 255, 0.8);
-      "
-    >
+  <body>
+    <header class="header">
       <a href="#main">
-        <img src="Logo.png" alt="Mai Home Logo white" />
-        Mai Home
+        <img src="Logo.png" alt="Logo white" />
+        <p class="header-logo">
+          Mai
+          <span>Home</span>
+        </p>
       </a>
       <nav>
         <ul>
-          <li><a href="#about_us">About us</a></li>
-          <li><a href="#solutions">Solutions</a></li>
-          <li><a href="#features">Features</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contact_us">Contact Us</a></li>
+          <li><a href="#about_us" class="header-nav-link">About us</a></li>
+          <li><a href="#solutions" class="header-nav-link">Solutions</a></li>
+          <li><a href="#features" class="header-nav-link">Features</a></li>
+          <li><a href="#faq" class="header-nav-link">FAQ</a></li>
+          <li><a href="#contact_us" class="header-nav-link">Contact Us</a></li>
         </ul>
       </nav>
-      <button type="button">Register</button>
-      <button type="button">Login</button>
+      <div class="header-button">
+        <button type="button" class="button is-secondary">Register</button>
+        <button type="button" class="button">Login</button>
+      </div>
     </header>
     <main>
-      <section id="main">
-        <h1>Dream Home Discovery: Browse Premier Listings Today!</h1>
-        <p>
+      <section id="main" class="main">
+        <h1 class="display-lg is-white">
+          Dream Home Discovery: Browse Premier Listings Today!
+        </h1>
+        <p class="is-white">
           Embark on a journey to discover your dream home by exploring our
           premier listings available for browsing today.
         </p>
@@ -45,66 +51,85 @@
           </div>
         </a>
         <ul>
-          <li><span>432</span> Partners</li>
-          <li><span>12.6K</span> Properties</li>
-          <li><span>480k</span> Customers</li>
+          <li class="is-white"><span class="display-md">432</span> Partners</li>
+          <li class="is-white">
+            <span class="display-md">12.6K</span> Properties
+          </li>
+          <li class="is-white">
+            <span class="display-md">480k</span> Customers
+          </li>
         </ul>
       </section>
 
-      <section id="about_us">
-        <h2>About Us</h2>
-        <p>
-          Welcome to <span>Mai Home</span>, your premier destination for real
-          estate solutions:
-        </p>
-        <ul>
-          <li>Your top choice for excellence in real estate solutions;</li>
-          <li>Passionately connecting people with their ideal homes;</li>
-          <li>A beacon of industry trust and professional integrity.</li>
-        </ul>
-        <img src="interier.png" alt="interier example" />
-        <blockquote>
-          <p>
-            "I'm incredibly pleased with the service provided by UrbanNest.
-            Their professionalism and dedication were evident throughout the
-            process, ultimately leading me to my dream home. I highly recommend
-            their services to anyone seeking a seamless real estate experience."
-          </p>
-          <img src="roundedguy.png" alt="Cody Fisher miniature" />
-          <cite>
-            <span>Cody Fisher</span>
-            <span>Manager at Surya Company</span>
-          </cite>
-        </blockquote>
+      <section id="about_us" class="about">
+        <div>
+          <h2 class="headline-md is-black">About Us</h2>
+          <div class="about-content">
+            <p class="headline-lg is-gray">
+              Welcome to <span class="highlight">Mai Home</span>, your premier
+              destination for real estate solutions:
+            </p>
+            <ul class="about-list">
+              <li class="headline-lg is-gray">
+                Your top choice for excellence in real estate solutions;
+              </li>
+              <li class="headline-lg is-gray">
+                Passionately connecting people with their ideal homes;
+              </li>
+              <li class="headline-lg is-gray">
+                A beacon of industry trust and professional integrity.
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <img src="interier.png" alt="interier example" />
+          <blockquote class="quote">
+            <p class="body-lg is-black">
+              "I'm incredibly pleased with the service provided by UrbanNest.
+              Their professionalism and dedication were evident throughout the
+              process, ultimately leading me to my dream home. I highly
+              recommend their services to anyone seeking a seamless real estate
+              experience."
+            </p>
+            <img src="roundedguy.png" alt="Cody Fisher miniature" />
+            <cite>
+              <span class="headline-sm is-black">Cody Fisher</span>
+              <span class="body-md is-light">Manager at Surya Company</span>
+            </cite>
+          </blockquote>
+        </div>
       </section>
 
-      <section id="solutions">
-        <h2>Tailored Real Estate Solutions for You</h2>
-        <p>
+      <section id="solution" class="solution">
+        <h2 class="display-sm is-black">
+          Tailored Real Estate Solutions for You
+        </h2>
+        <p class="solution-text is-light">
           Unlock the perfect property. Discover tailored real estate solutions
           designed to meet your needs with precision and expertise.
         </p>
         <ul>
           <li>
             <img src="dialog.png" alt="dialog icon" />
-            <h3>Property Search and Listing</h3>
-            <p>
+            <h3 class="headline-md">Property Search and Listing</h3>
+            <p class="body-lg is-gray">
               Discover available properties, uncover your ideal living space,
               start exploring now.
             </p>
           </li>
           <li>
             <img src="stat.png" alt="statistic icon" />
-            <h3>Property Valuation</h3>
-            <p>
+            <h3 class="headline-md">Property Valuation</h3>
+            <p class="body-lg is-gray">
               Thorough property assessment, accurate valuations, crucial for
               informed real estate decisions.
             </p>
           </li>
           <li>
             <img src="home.png" alt="home icon" />
-            <h3>Property Management</h3>
-            <p>
+            <h3 class="headline-md">Property Management</h3>
+            <p class="body-lg is-gray">
               Professional property oversight, maximizing profitability, and
               preserving asset value seamlessly.
             </p>
@@ -112,19 +137,23 @@
         </ul>
       </section>
 
-      <section id="recomendation">
-        <h2>Real Estate Recommendation Of The Day</h2>
-        <p>
+      <section id="recomendation" class="recomendation">
+        <h2 class="display-sm is-black">
+          Real Estate Recommendation Of The Day
+        </h2>
+        <p class="body-lg is-light">
           Introducing our daily feature: 'Real Estate Recommendation of the
           Day.' Explore carefully curated listings to find your perfect property
           match and make informed decisions effortlessly
         </p>
         <ul>
-          <li><button type="button">All (40+)</button></li>
-          <li><button type="button">Home (6)</button></li>
-          <li><button type="button">Apartment (14)</button></li>
-          <li><button type="button">Guesthouse (8)</button></li>
-          <li><button type="button">Hotel (12)</button></li>
+          <li>
+            <button type="button" class="tab is-active">All (40+)</button>
+          </li>
+          <li><button type="button" class="tab">Home (6)</button></li>
+          <li><button type="button" class="tab">Apartment (14)</button></li>
+          <li><button type="button" class="tab">Guesthouse (8)</button></li>
+          <li><button type="button" class="tab">Hotel (12)</button></li>
         </ul>
         <ul>
           <li>
@@ -134,18 +163,18 @@
                 <div class="bluearrow-button">
                   <img src="arrowcard.png" alt="arrow icon" />
                 </div>
-                <h3>Dreamland Estates</h3>
+                <h3 class="headline-sm is-black">Dreamland Estates</h3>
                 <div>
-                  <p>(-41%)</p>
-                  <p>$611,520</p>
+                  <p class="discount-text">(-41%)</p>
+                  <p class="price-text">$611,520</p>
                 </div>
                 <div>
                   <img src="geotag.png" alt="geotag icon" />
-                  <p>St. Utica, Pennsylvania 57867</p>
+                  <p class="body-md is-light">St. Utica, Pennsylvania 57867</p>
                 </div>
                 <div>
                   <img src="star.png" alt="star" />
-                  <p>4,8/5</p>
+                  <p class="body-sm is-light">4,8/5</p>
                 </div>
               </a>
             </article>
@@ -157,18 +186,18 @@
                 <div class="bluearrow-button">
                   <img src="arrowcard.png" alt="arrow icon" />
                 </div>
-                <h3>Visionary Vistas Realty</h3>
+                <h3 class="headline-sm is-black">Visionary Vistas Realty</h3>
                 <div>
-                  <p>(-41%)</p>
-                  <p>$611,520</p>
+                  <p class="discount-text">(-41%)</p>
+                  <p class="price-text">$611,520</p>
                 </div>
                 <div>
                   <img src="geotag.png" alt="geotag icon" />
-                  <p>Cir. Shiloh, Hawaii 81063</p>
+                  <p class="body-md is-light">Cir. Shiloh, Hawaii 81063</p>
                 </div>
                 <div>
                   <img src="star.png" alt="star" />
-                  <p>4,8/5</p>
+                  <p class="body-sm is-light">4,8/5</p>
                 </div>
               </a>
             </article>
@@ -180,18 +209,18 @@
                 <div class="bluearrow-button">
                   <img src="arrowcard.png" alt="arrow icon" />
                 </div>
-                <h3>Tranquil Haven Homes</h3>
+                <h3 class="headline-sm is-black">Tranquil Haven Homes</h3>
                 <div>
-                  <p>(-41%)</p>
-                  <p>$611,520</p>
+                  <p class="discount-text">(-41%)</p>
+                  <p class="price-text">$611,520</p>
                 </div>
                 <div>
                   <img src="geotag.png" alt="geotag icon" />
-                  <p>St. Celina, Delaware 10299</p>
+                  <p class="body-md is-light">St. Celina, Delaware 10299</p>
                 </div>
                 <div>
                   <img src="star.png" alt="star" />
-                  <p>4,8/5</p>
+                  <p class="body-sm is-light">4,8/5</p>
                 </div>
               </a>
             </article>
@@ -203,18 +232,18 @@
                 <div class="bluearrow-button">
                   <img src="arrowcard.png" alt="arrow icon" />
                 </div>
-                <h3>Meadow Brook Estates</h3>
+                <h3 class="headline-sm is-black">Meadow Brook Estates</h3>
                 <div>
-                  <p>(-41%)</p>
-                  <p>$611,520</p>
+                  <p class="discount-text">(-41%)</p>
+                  <p class="price-text">$611,520</p>
                 </div>
                 <div>
                   <img src="geotag.png" alt="geotag icon" />
-                  <p>St. Utica, Pennsylvania 57867</p>
+                  <p class="body-md is-light">St. Utica, Pennsylvania 57867</p>
                 </div>
                 <div>
                   <img src="star.png" alt="star" />
-                  <p>4,8/5</p>
+                  <p class="body-sm is-light">4,8/5</p>
                 </div>
               </a>
             </article>
@@ -226,18 +255,18 @@
                 <div class="bluearrow-button">
                   <img src="arrowcard.png" alt="arrow icon" />
                 </div>
-                <h3>Aspen Ridge Estates</h3>
+                <h3 class="headline-sm is-black">Aspen Ridge Estates</h3>
                 <div>
-                  <p>(-41%)</p>
-                  <p>$611,520</p>
+                  <p class="discount-text">(-41%)</p>
+                  <p class="price-text">$611,520</p>
                 </div>
                 <div>
                   <img src="geotag.png" alt="geotag icon" />
-                  <p>St. Utica, Pennsylvania 57867</p>
+                  <p class="body-md is-light">St. Utica, Pennsylvania 57867</p>
                 </div>
                 <div>
                   <img src="star.png" alt="star" />
-                  <p>4,8/5</p>
+                  <p class="body-sm is-light">4,8/5</p>
                 </div>
               </a>
             </article>
@@ -249,18 +278,18 @@
                 <div class="bluearrow-button">
                   <img src="arrowcard.png" alt="arrow icon" />
                 </div>
-                <h3>Harmony Hills Realty</h3>
+                <h3 class="headline-sm is-black">Harmony Hills Realty</h3>
                 <div>
-                  <p>(-41%)</p>
-                  <p>$611,520</p>
+                  <p class="discount-text">(-41%)</p>
+                  <p class="price-text">$611,520</p>
                 </div>
                 <div>
                   <img src="geotag.png" alt="geotag icon" />
-                  <p>St. Utica, Pennsylvania 57867</p>
+                  <p class="body-md is-light">St. Utica, Pennsylvania 57867</p>
                 </div>
                 <div>
                   <img src="star.png" alt="star" />
-                  <p>4,8/5</p>
+                  <p class="body-sm is-light">4,8/5</p>
                 </div>
               </a>
             </article>
@@ -271,9 +300,11 @@
           <img src="lmicon.png" alt="learn more arrow" />
         </a>
       </section>
-      <section id="features">
-        <h2>Exceptional Features for Real Estate Excellence</h2>
-        <p>
+      <section id="features" class="features">
+        <h2 class="display-sm">
+          Exceptional Features for Real Estate Excellence
+        </h2>
+        <p class="body-lg is-light">
           Discover standout features elevating real estate experiences, ensuring
           excellence and efficiency in every interaction. Explore now for
           unparalleled service.
@@ -282,8 +313,8 @@
           <li>
             <article>
               <img src="pic1" alt="Instant process example" />
-              <h3>Instant process to get house dream</h3>
-              <p>
+              <h3 class="headline-md">Instant process to get house dream</h3>
+              <p class="body-lg is-gray">
                 FramerAuth validates user's access rights to tiered plans
                 ensuring a seamless user experience
               </p>
@@ -292,8 +323,8 @@
           <li>
             <article>
               <img src="pic2" alt="Discount example" />
-              <h3>Discount Up to 50% for new user</h3>
-              <p>
+              <h3 class="headline-md">Discount Up to 50% for new user</h3>
+              <p class="body-lg is-gray">
                 Don't miss out on this incredible opportunity to find your dream
                 home at unbeatable prices!
               </p>
@@ -302,8 +333,10 @@
           <li>
             <article>
               <img src="pic3" alt="Search example" />
-              <h3>Use Generated Search for find your Location</h3>
-              <p>
+              <h3 class="headline-md">
+                Use Generated Search for find your Location
+              </h3>
+              <p class="body-lg is-gray">
                 Utilise Generated Search to pinpoint your precise geographical
                 location accurately and efficiently
               </p>
@@ -312,64 +345,75 @@
           <li>
             <article>
               <img src="pic4" alt="Partners example" />
-              <h3>More Than 1 Million Partners</h3>
-              <p>Connecting over one million partners for real estate</p>
+              <h3 class="headline-md">More Than 1 Million Partners</h3>
+              <p class="body-lg is-gray">
+                Connecting over one million partners for real estate
+              </p>
             </article>
           </li>
         </ul>
       </section>
-      <section id="faq">
-        <h2>Frequently Asked Questions (FAQ)</h2>
-        <p>
+      <section id="faq" class="faq">
+        <h2 class="display-sm">Frequently Asked Questions (FAQ)</h2>
+        <p class="body-lg is light">
           Quickly find answers to common real estate queries in our
           comprehensive FAQ section. Simplify your property journey
           effortlessly.
         </p>
         <details>
-          <summary>How do I start the home buying process?</summary>
-          <p>
+          <summary class="headline-lg">
+            How do I start the home buying process?
+          </summary>
+          <p class="body-lg is-gray">
             Begin by determining your budget and preferences. Then, explore
             listings online or contact a real estate agent to help you find
             suitable properties.
           </p>
         </details>
         <details>
-          <summary>
+          <summary class="headline-lg">
             What factors should I consider when choosing a neighborhood?
           </summary>
-          <p>Some text for block 2</p>
+          <p class="body-lg is-gray">Some text for block 2</p>
         </details>
         <details>
-          <summary>How can I determine the value of my property?</summary>
-          <p>Some text for block 3</p>
+          <summary class="headline-lg">
+            How can I determine the value of my property?
+          </summary>
+          <p class="body-lg is-gray">Some text for block 3</p>
         </details>
         <details>
-          <summary>What steps are involved in selling a home?</summary>
-          <p>Some text for block 4</p>
+          <summary class="headline-lg">
+            What steps are involved in selling a home?
+          </summary>
+          <p class="body-lg is-gray">Some text for block 4</p>
         </details>
         <details>
-          <summary>
+          <summary class="headline-lg">
             How can I improve my credit score before applying for a mortgage?
           </summary>
-          <p>Some text for block 5</p>
+          <p class="body-lg is-gray">Some text for block 5</p>
         </details>
       </section>
-      <section id="contact_us">
-        <h2>Start Your Real Estate Journey Here</h2>
-        <p>
+      <section id="contact" class="contact">
+        <h2 class="display-sm is-white">Start Your Real Estate Journey Here</h2>
+        <p class="body-lg is-white">
           Embark on your real estate journey today. Explore our listings and
           find the perfect property to call home.
         </p>
       </section>
     </main>
-    <footer>
+    <footer id="footer" class="footer">
       <div>
         <div>
           <a href="">
             <img src="Logo.png" alt="Mai Home Logo black" />
-            Mai Home
+            <p class="footer-logo">
+              Mai
+              <span>Home</span>
+            </p>
           </a>
-          <p>
+          <p class="body-lg is-gray">
             Explore our extensive listings of properties, ranging from cozy
             apartments to luxurious estates, meticulously curated to cater to
             diverse tastes and lifestyles.
@@ -393,42 +437,50 @@
           </ul>
         </div>
         <div>
-          <h2>Navigation</h2>
+          <h2 class="body-lg">Navigation</h2>
           <ul>
-            <li><a href="">Overview</a></li>
-            <li><a href="">Explore</a></li>
-            <li><a href="">Analytics</a></li>
-            <li><a href="">Unit</a></li>
-            <li><a href="">Payment</a></li>
+            <li><a href="" class="body-md is-gray">Overview</a></li>
+            <li><a href="" class="body-md is-gray">Explore</a></li>
+            <li><a href="" class="body-md is-gray">Analytics</a></li>
+            <li><a href="" class="body-md is-gray">Unit</a></li>
+            <li><a href="" class="body-md is-gray">Payment</a></li>
           </ul>
         </div>
         <div>
-          <h2>Address</h2>
+          <h2 class="body-lg">Address</h2>
           <ul>
             <li>
-              <a href="">6391 Elgin St. Celina, Delaware 10299</a>
+              <a href="" class="body-md is-gray"
+                >6391 Elgin St. Celina, Delaware 10299</a
+              >
             </li>
             <li>
-              <a href="">3891 Ranchview Dr. Richardson, California 62639</a>
+              <a href="" class="body-md is-gray"
+                >3891 Ranchview Dr. Richardson, California 62639</a
+              >
             </li>
           </ul>
         </div>
         <div>
-          <h2>Contact</h2>
+          <h2 class="body-lg">Contact</h2>
           <ul>
             <li>
-              <a href="mailto:UrbanNest@gmail.com">UrbanNest@gmail.com</a>
+              <a href="mailto:UrbanNest@gmail.com" class="body-md is-gray"
+                >UrbanNest@gmail.com</a
+              >
             </li>
             <li>
-              <a href="tel:+13075550133">(307) 555-0133</a>
+              <a href="tel:+13075550133" class="body-md is-gray"
+                >(307) 555-0133</a
+              >
             </li>
           </ul>
         </div>
       </div>
-      <p>Copyright MaiHome.2022</p>
+      <p class="body-lg is-gray">Copyright MaiHome.2022</p>
       <ul>
-        <li><a href="">Privacy Policy</a></li>
-        <li><a href="">Terms Of Use</a></li>
+        <li><a href="" class="body-lg is-gray">Privacy Policy</a></li>
+        <li><a href="" class="body-lg is-gray">Terms Of Use</a></li>
       </ul>
     </footer>
   </body>
