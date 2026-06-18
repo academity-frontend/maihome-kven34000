@@ -1,48 +1,54 @@
 :root {
   --font-default: "Poppins", Arial, sans-serif;
 
-  --color-white: rgba(255, 255, 255, 1);
-  --color-black: rgba(255, 255, 255, 0.1);
+  --color-white: rgb(255, 255, 255);
+  --color-black: rgb(rgba(0, 0, 0));
 
   /*text color*/
-  --color-text-primary: rgba(26, 26, 26, 1);
-  --color-text-secondary: rgba(68, 60, 60, 1);
-  --color-text-tertiary: rgba(102, 102, 102, 1);
-  --color-text-neutral: rgba(230, 230, 230, 1);
+  --color-text-primary: rgb(26, 26, 26);
+  --color-text-secondary: rgb(68, 60, 60);
+  --color-text-tertiary: rgb(102, 102, 102);
+  --color-text-neutral: rgb(230, 230, 230);
 
   /*button color: ;*/
-  --color-button-primary-default: rgba(59, 109, 255, 1);
-  --color-button-primary-hover: rgba(119, 154, 255, 1);
-  --color-button-primary-pressed: rgba(41, 95, 255, 1);
-  --color-button-primary-disabled: rgba(180, 190, 218, 1);
+  --color-button-primary-default: rgb(59, 109, 255);
+  --color-button-primary-hover: rgb(119, 154, 255);
+  --color-button-primary-pressed: rgb(41, 95, 255);
+  --color-button-primary-disabled: rgb(180, 190, 218);
 
-  --color-button-secondary-default: rgba(230, 236, 254, 1);
-  --color-button-secondary-hover: rgba(119, 154, 255, 1);
-  --color-button-secondary-pressed: rgba(133, 163, 255, 1);
-  --color-button-secondary-disabled: rgba(176, 189, 228, 1);
+  --color-button-secondary-default: rgb(230, 236, 254);
+  --color-button-secondary-hover: rgb(119, 154, 255);
+  --color-button-secondary-pressed: rgb(133, 163, 255);
+  --color-button-secondary-disabled: rgb(176, 189, 228);
 
   --color-button-secondary-border: rgba(255, 255, 255, 0.75);
 
   /*background color: ;*/
-  --color-background-main: rgba(255, 255, 255, 1);
-  --color-background-secondary: rgba(244, 244, 246, 1);
+  --color-background-main: rgb(255, 255, 255);
+  --color-background-secondary: rgb(244, 244, 246);
   --color-background-surfacefill: rgba(255, 255, 255, 0.15);
-  --color-background-surfacefill2: rgba(250, 250, 250, 1);
-  --color-background-surfacestroke: rgba(200, 200, 200, 1);
+  --color-background-surfacefill2: rgb(250, 250, 250);
+  --color-background-surfacestroke: rgb(200, 200, 200);
+  --color-background-details: rgba(255, 255, 255, 0.52);
 
   /* Functional */
-  --color-functional-green: rgba(0, 189, 0, 1);
-  --color-functional-yellow: rgba(253, 176, 34, 1);
-  --color-functional-grey: rgba(232, 234, 237, 1);
-  --color-functional-red: rgba(255, 0, 0, 1);
-  --color-functional-blue: rgba(0, 111, 255, 1);
+  --color-functional-green: rgb(0, 189, 0);
+  --color-functional-yellow: rgb(253, 176, 34);
+  --color-functional-grey: rgb(232, 234, 237);
+  --color-functional-red: rgb(255, 0, 0);
+  --color-functional-blue: rgb(0, 111, 255);
 
-  --color-instagram: rgba(240, 0, 115, 1);
-  --color-fb: rgba(24, 119, 242, 1);
-  --color-twitter: rgba(29, 161, 242, 1);
+  --color-instagram: rgb(240, 0, 115);
+  --color-fb: rgb(24, 119, 242);
+  --color-twitter: rgb(29, 161, 242);
 }
 
 /* user styles */
+* {
+  font-weight: inherit;
+  padding: 0;
+  margin: 0;
+}
 
 body {
   font-family: var(--font-default);
@@ -51,16 +57,8 @@ body {
   line-height: 1.5;
   font-weight: 400;
   background-color: #083d59;
-  margin: 0;
 }
-* {
-  font-weight: inherit;
-  padding: 0;
-  margin: 0;
-}
-.highlight {
-  color: var(--color-text-primary);
-}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -84,7 +82,12 @@ cite {
 .color-text-secondary {
   color: var(--color-text-secondary);
 }
-
+.highlight {
+  color: var(--color-text-primary);
+}
+.text-heavy {
+  font-weight: 700;
+}
 /* buttons */
 .button {
   background-color: var(--color-button-primary-default);
@@ -148,7 +151,7 @@ cite {
   font-weight: 500;
   font-size: 64px;
   line-height: 1.3;
-  letter-spacing: -0.078em;
+  letter-spacing: -0.05em;
 }
 .subtitle-md {
   font-size: 56px;
@@ -176,13 +179,9 @@ cite {
   z-index: 100;
 }
 .header-logo {
-  font-size: 26.18px;
+  font-size: 26px;
   line-height: 1;
   color: var(--color-white);
-
-  span {
-    font-weight: 700;
-  }
 }
 .header-nav-link {
   font-size: 16px;
@@ -198,8 +197,6 @@ cite {
   background-color: var(--color-background-surfacefill2);
   border: 1px solid var(--color-background-surfacestroke);
   border-radius: 1000px;
-  font-family: var(--font-default);
-  line-height: 1;
 }
 /*about*/
 .about {
@@ -247,12 +244,11 @@ cite {
   font-family: var(--font-default);
   line-height: 1;
 }
-.card-link-icon {
+.card-button {
   background-color: var(--color-button-primary-default);
-  border: 1px solid var (--color-background-surfacefill2);
+  border: 1px solid var(--color-background-surfacefill2);
   border-radius: 1000px;
   padding: 16px;
-  gap: 8px;
 }
 
 /*features*/
@@ -268,6 +264,14 @@ cite {
 .faq {
   background-color: var(--color-background-secondary);
 }
+
+.details {
+  border-radius: 32px;
+  background-color: var(--color-background-details);
+}
+.summary {
+  list-style: none;
+}
 /*contact*/
 .contact {
   background-color: var(--color-background-secondary);
@@ -277,11 +281,7 @@ cite {
   background-color: var(--color-background-main);
 }
 .footer-logo {
-  font-size: 26.18px;
+  font-size: 26px;
   line-height: 1;
   color: var(--color-black);
-
-  span {
-    font-weight: 700;
-  }
 }
