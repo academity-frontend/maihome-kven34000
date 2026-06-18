@@ -2,7 +2,7 @@
   --font-default: "Poppins", Arial, sans-serif;
 
   --color-white: rgb(255, 255, 255);
-  --color-black: rgb(rgba(0, 0, 0));
+  --color-black: rgb(0, 0, 0);
 
   /*text color*/
   --color-text-primary: rgb(26, 26, 26);
