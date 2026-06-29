@@ -56,7 +56,7 @@ body {
   font-size: 20px;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #083d59;
+  background-color: gray;
 }
 
 a {
@@ -164,10 +164,16 @@ cite {
   line-height: 1.3;
   letter-spacing: -0.041em;
 }
-
+.hero-wrapper {
+  background-color: #083d59;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("images/main.webp") no-repeat center / cover;
+  max-width: 923px;
+  max-height: 1442px;
+  padding-top: 24px;
+}
 /* header */
 .header {
-  margin: 24px auto 0 auto;
   max-width: 1072px;
   box-sizing: border-box;
   padding: 8px 8px 8px 16px;
@@ -177,6 +183,8 @@ cite {
   align-items: center;
   justify-content: space-between;
   z-index: 100;
+  margin-left: auto;
+  margin-right: auto;
 }
 .header-logo {
   font-size: 26px;
@@ -190,7 +198,6 @@ cite {
 }
 /* main */
 .main {
-  background-color: #083d59;
   text-align: center;
 }
 .slider-button {
@@ -204,6 +211,18 @@ cite {
 }
 .about-list {
   list-style: disc;
+}
+.about-img {
+  max-width: 562px;
+  max-height: 495px;
+  border-radius: 32px;
+}
+.cody-img {
+  height: 64px;
+  width: 64px;
+  border-radius: 48px;
+  object-fit: cover;
+  object-position: center 70%;
 }
 .quote {
   background-color: var(--color-background-surfacefill2);
@@ -250,6 +269,11 @@ cite {
   border-radius: 1000px;
   padding: 16px;
 }
+.card-img {
+  max-width: 440px;
+  max-height: 206px;
+  border-radius: 22px;
+}
 
 /*features*/
 .features {
@@ -274,7 +298,19 @@ cite {
 }
 /*contact*/
 .contact {
+  background: linear-gradient(
+      to left,
+      rgba(59, 109, 255, 0.65),
+      rgba(0, 0, 0, 0.95)
+    ),
+    url("images/interier.webp") no-repeat center / cover;
   background-color: var(--color-background-secondary);
+  max-width: 1440px;
+  max-height: 607px;
+}
+.contact-img {
+  max-width: 1001px;
+  max-height: 563px;
 }
 /*footer*/
 .footer {
@@ -284,4 +320,52 @@ cite {
   font-size: 26px;
   line-height: 1;
   color: var(--color-black);
+}
+.footer-logo-icon {
+  filter: invert(100%);
+}
+
+.inst {
+  background-color: var(--color-instagram);
+  border-radius: 1000px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.inst img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.fb {
+  background-color: var(--color-fb);
+  border-radius: 1000px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.fb img {
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+
+.twtr {
+  background-color: var(--color-twitter);
+  border-radius: 1000px;
+  width: 40px;
+  height: 40px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+.twtr img {
+  width: 20px;
+  height: 20px;
+  display: block;
 }
