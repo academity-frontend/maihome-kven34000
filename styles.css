@@ -63,31 +63,40 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
 ul {
   list-style: none;
   margin-block-end: 0;
 }
+
 cite {
   font-style: normal;
 }
+
 .color-text-quaternary {
   color: var(--color-white);
 }
+
 .color-text-primary {
   color: var(--color-text-primary);
 }
+
 .color-text-tertiary {
   color: var(--color-text-tertiary);
 }
+
 .color-text-secondary {
   color: var(--color-text-secondary);
 }
+
 .highlight {
   color: var(--color-text-primary);
 }
+
 .text-heavy {
   font-weight: 700;
 }
+
 /* buttons */
 .button {
   background-color: var(--color-button-primary-default);
@@ -98,11 +107,13 @@ cite {
   border-radius: 1000px;
   font-family: var(--font-default);
 }
+
 .button-secondary {
   background-color: var(--color-button-secondary-default);
   color: var(--color-text-primary);
   border: 1px solid var(--color-button-secondary-border);
 }
+
 .tab {
   background-color: var(--color-background-surfacefill2);
   color: var(--color-text-secondary);
@@ -112,6 +123,7 @@ cite {
   line-height: 1.5;
   font-family: var(--font-default);
 }
+
 .is-active {
   background-color: var(--color-button-primary-default);
   color: var(--color-white);
@@ -120,14 +132,17 @@ cite {
   font-size: 20px;
   line-height: 1.5;
 }
+
 /* text */
 .body-lg {
   font-size: 20px;
 }
+
 .body-md {
   font-size: 16px;
   line-height: 1.125;
 }
+
 .body-sm {
   font-size: 14px;
   line-height: 1;
@@ -137,10 +152,12 @@ cite {
   font-size: 32px;
   letter-spacing: -0.02em;
 }
+
 .headline-md {
   font-weight: 500;
   font-size: 24px;
 }
+
 .headline-sm {
   font-size: 20px;
   font-weight: 500;
@@ -153,11 +170,13 @@ cite {
   line-height: 1.3;
   letter-spacing: -0.05em;
 }
+
 .subtitle-md {
   font-size: 56px;
   line-height: 1.3;
   letter-spacing: -0.071em;
 }
+
 .subtitle-sm {
   font-weight: 500;
   font-size: 48px;
@@ -177,16 +196,19 @@ cite {
   justify-content: space-between;
   z-index: 100;
 }
+
 .header-logo {
   font-size: 26px;
   line-height: 1;
   color: var(--color-white);
 }
+
 .header-nav-link {
   font-size: 16px;
   line-height: 1;
   color: var(--color-white);
 }
+
 /* main */
 .entrance {
   text-align: center;
@@ -196,26 +218,33 @@ cite {
   max-width: 923px;
   max-height: 1442px;
 }
+
 .slider-button {
   background-color: var(--color-background-surfacefill2);
   border: 1px solid var(--color-background-surfacestroke);
   border-radius: 1000px;
 }
+
 /*about*/
 .about {
   background-color: var(--color-text-neutral);
 }
+
 .about-list {
   list-style: disc;
 }
+
 .about-img {
-  max-width: 562px;
-  max-height: 495px;
+  width: 562px;
+  height: 495px;
   border-radius: 32px;
+  background: url("images/interier.webp") no-repeat center / cover;
 }
+
 .cody-img {
   border-radius: 48px;
 }
+
 .quote {
   background-color: var(--color-background-surfacefill2);
   border: 1px solid var(--color-background-surfacestroke);
@@ -223,29 +252,35 @@ cite {
   border-radius: 32px;
   margin-block-end: 0;
 }
+
 /*solution*/
 .solution {
   background-color: var(--color-background-main);
   text-align: center;
 }
+
 .solution-text {
   line-height: 1;
   color: var(--color-text-secondary);
 }
+
 /*recomendation*/
 .recomendation {
   background-color: var(--color-background-main);
 }
+
 .discount-text {
   line-height: 1;
   color: var(--color-text-secondary);
   font-size: 16px;
 }
+
 .price-text {
   line-height: 1;
   color: var(--color-text-primary);
   font-size: 16px;
 }
+
 .learn-more {
   background-color: var(--color-button-secondary-default);
   color: var(--color-text-primary);
@@ -255,12 +290,14 @@ cite {
   font-family: var(--font-default);
   line-height: 1;
 }
+
 .card-button {
   background-color: var(--color-button-primary-default);
   border: 1px solid var(--color-background-surfacefill2);
   border-radius: 1000px;
   padding: 16px;
 }
+
 .card-img {
   max-width: 440px;
   max-height: 206px;
@@ -271,11 +308,13 @@ cite {
 .features {
   background-color: var(--color-background-secondary);
 }
+
 .feature-article {
   background-color: var(--color-background-main);
   border: 1px solid var(--color-background-surfacestroke);
   border-radius: 32px;
 }
+
 /*faq*/
 .faq {
   background-color: var(--color-background-secondary);
@@ -285,9 +324,11 @@ cite {
   border-radius: 32px;
   background-color: var(--color-background-details);
 }
+
 .summary {
   list-style: none;
 }
+
 /*contact*/
 .contact {
   background: linear-gradient(
@@ -305,11 +346,13 @@ cite {
 .footer {
   background-color: var(--color-background-main);
 }
+
 .footer-logo {
   font-size: 26px;
   line-height: 1;
   color: var(--color-black);
 }
+
 .social {
   border-radius: 1000px;
   width: 40px;
@@ -318,6 +361,7 @@ cite {
   align-items: center;
   justify-content: center;
 }
+
 .inst_color {
   background-color: var(--color-instagram);
 }
