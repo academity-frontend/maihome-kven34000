@@ -23,7 +23,7 @@
         </p>
       </a>
       <nav>
-        <ul>
+        <ul class="header-links-list">
           <li><a href="#about_us" class="header-nav-link">About us</a></li>
           <li><a href="#solution" class="header-nav-link">Solutions</a></li>
           <li><a href="#features" class="header-nav-link">Features</a></li>
@@ -68,52 +68,56 @@
         </div>
       </section>
       <section id="about_us" class="about">
-        <div class="content-wrapper">
-          <div class="about-text-wrapper">
-            <h2 class="headline-md color-text-primary">About Us</h2>
-            <div class="about-content">
-              <p class="headline-lg color-text-tertiary">
-                Welcome to <span class="highlight">Mai Home</span>, your premier
-                destination for real estate solutions:
-              </p>
-              <ul class="about-list">
-                <li class="headline-lg color-text-tertiary">
-                  Your top choice for excellence in real estate solutions;
-                </li>
-                <li class="headline-lg color-text-tertiary">
-                  Passionately connecting people with their ideal homes;
-                </li>
-                <li class="headline-lg color-text-tertiary">
-                  A beacon of industry trust and professional integrity.
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="about-block-wrapper">
-            <div class="about-img"></div>
-            <blockquote class="quote">
-              <p class="body-lg color-text-primary">
-                "I'm incredibly pleased with the service provided by UrbanNest.
-                Their professionalism and dedication were evident throughout the
-                process, ultimately leading me to my dream home. I highly
-                recommend their services to anyone seeking a seamless real
-                estate experience."
-              </p>
-              <div>
-                <img
-                  src="images/codyfisher.webp"
-                  width="64"
-                  height="64"
-                  alt="Cody Fisher miniature"
-                />
+        <div class="content-wrapper about-wrapper">
+          <h2 class="headline-md color-text-primary">About Us</h2>
+          <div clss="about-right-column">
+            <div class="about-text-wrapper">
+              <div class="about-content">
+                <p class="headline-lg color-text-tertiary">
+                  Welcome to <span class="highlight">Mai Home</span>, your
+                  premier destination for real estate solutions:
+                </p>
+                <ul class="about-list">
+                  <li class="headline-lg color-text-tertiary">
+                    Your top choice for excellence in real estate solutions;
+                  </li>
+                  <li class="headline-lg color-text-tertiary">
+                    Passionately connecting people with their ideal homes;
+                  </li>
+                  <li class="headline-lg color-text-tertiary">
+                    A beacon of industry trust and professional integrity.
+                  </li>
+                </ul>
               </div>
-              <cite>
-                <span class="headline-sm color-text-primary">Cody Fisher</span>
-                <span class="body-md color-text-secondary">
-                  Manager at Surya Company
-                </span>
-              </cite>
-            </blockquote>
+            </div>
+            <div class="about-block-wrapper">
+              <div class="about-img"></div>
+              <blockquote class="quote">
+                <p class="body-lg color-text-primary">
+                  "I'm incredibly pleased with the service provided by
+                  UrbanNest. Their professionalism and dedication were evident
+                  throughout the process, ultimately leading me to my dream
+                  home. I highly recommend their services to anyone seeking a
+                  seamless real estate experience."
+                </p>
+                <div class="cite-picture">
+                  <img
+                    src="images/codyfisher.webp"
+                    width="64"
+                    height="64"
+                    alt="Cody Fisher miniature"
+                  />
+                </div>
+                <cite class="cite-description">
+                  <span class="headline-sm color-text-primary cite-name"
+                    >Cody Fisher</span
+                  >
+                  <span class="body-md color-text-secondary">
+                    Manager at Surya Company
+                  </span>
+                </cite>
+              </blockquote>
+            </div>
           </div>
         </div>
       </section>
@@ -126,15 +130,15 @@
             Unlock the perfect property. Discover tailored real estate solutions
             designed to meet your needs with precision and expertise.
           </p>
-          <ul class="solution-ul">
-            <li>
+          <ul class="solution-card-container">
+            <li class="solution-ul-item">
               <img
                 src="images/search.webp"
                 width="104"
                 height="104"
                 alt="search icon"
               />
-              <h3 class="headline-md solution-h3">
+              <h3 class="headline-md solution-card-head">
                 Property Search and Listing
               </h3>
               <p class="body-lg color-text-tertiary">
@@ -142,27 +146,29 @@
                 start exploring now.
               </p>
             </li>
-            <li>
+            <li class="solution-ul-item">
               <img
                 src="images/analize.webp"
                 width="104"
                 height="104"
                 alt="statistic icon"
               />
-              <h3 class="headline-md solution-h3">Property Valuation</h3>
+              <h3 class="headline-md solution-card-head">Property Valuation</h3>
               <p class="body-lg color-text-tertiary">
                 Thorough property assessment, accurate valuations, crucial for
                 informed real estate decisions.
               </p>
             </li>
-            <li>
+            <li class="solution-ul-item">
               <img
                 src="images/home.webp"
                 width="104"
                 height="104"
                 alt="home icon"
               />
-              <h3 class="headline-md solution-h3">Property Management</h3>
+              <h3 class="headline-md solution-card-head">
+                Property Management
+              </h3>
               <p class="body-lg color-text-tertiary">
                 Professional property oversight, maximizing profitability, and
                 preserving asset value seamlessly.
@@ -810,17 +816,19 @@
             <div class="footer-col">
               <h2 class="body-lg">Navigation</h2>
               <ul class="footer-links">
-                <li>
+                <li class="footer-links-item">
                   <a href="" class="body-md color-text-tertiary">Overview</a>
                 </li>
-                <li>
+                <li class="footer-links-item">
                   <a href="" class="body-md color-text-tertiary">Explore</a>
                 </li>
-                <li>
+                <li class="footer-links-item">
                   <a href="" class="body-md color-text-tertiary">Analytics</a>
                 </li>
-                <li><a href="" class="body-md color-text-tertiary">Unit</a></li>
-                <li>
+                <li class="footer-links-item">
+                  <a href="" class="body-md color-text-tertiary">Unit</a>
+                </li>
+                <li class="footer-links-item">
                   <a href="" class="body-md color-text-tertiary">Payment</a>
                 </li>
               </ul>
@@ -828,12 +836,12 @@
             <div class="footer-col">
               <h2 class="body-lg">Address</h2>
               <ul class="footer-links">
-                <li>
+                <li class="footer-links-item">
                   <a href="" class="body-md color-text-tertiary">
                     6391 Elgin St. Celina, Delaware 10299
                   </a>
                 </li>
-                <li>
+                <li class="footer-links-item">
                   <a href="" class="body-md color-text-tertiary">
                     3891 Ranchview Dr. Richardson, California 62639
                   </a>
@@ -843,7 +851,7 @@
             <div class="footer-col">
               <h2 class="body-lg">Contact</h2>
               <ul class="footer-links">
-                <li>
+                <li class="footer-links-item">
                   <a
                     href="mailto:UrbanNest@gmail.com"
                     class="body-md color-text-tertiary"
@@ -851,7 +859,7 @@
                     UrbanNest@gmail.com
                   </a>
                 </li>
-                <li>
+                <li class="footer-links-item">
                   <a
                     href="tel:+13075550133"
                     class="body-md color-text-tertiary"

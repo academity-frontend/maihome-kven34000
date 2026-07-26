@@ -101,8 +101,7 @@ cite {
 .content-wrapper {
   max-width: 1360px;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
   box-sizing: border-box;
 }
 
@@ -249,12 +248,10 @@ cite {
   gap: 12px;
 }
 
-.header nav ul {
+.header-links-list {
   display: flex;
   align-items: center;
   gap: 28px;
-  padding: 0;
-  margin: 0;
 }
 
 /* main */
@@ -263,7 +260,7 @@ cite {
   background-color: var(--color-functional-blue);
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("images/main.webp") no-repeat center / cover;
-  padding-top: 190px;
+  padding: 190px 184px 48px;
 }
 
 .slider-button {
@@ -281,7 +278,6 @@ cite {
   align-items: center;
   justify-content: center;
   gap: 139px;
-  padding-bottom: 48px;
 }
 
 .main-results {
@@ -295,18 +291,23 @@ cite {
 /*about*/
 .about {
   background-color: var(--color-text-neutral);
+  padding: 80px 40px 48px;
+  padding-inline: 40px;
 }
 
-.about-text-wrapper {
+.about-wrapper {
   display: flex;
-  gap: 120px;
-  padding-top: 80px;
+  justify-content: space-between;
+}
+
+.about-right-column {
+  display: flex;
+  flex-direction: column;
 }
 
 .about-block-wrapper {
   display: flex;
   justify-content: end;
-  padding-bottom: 48px;
   gap: 20px;
 }
 
@@ -324,7 +325,7 @@ cite {
 }
 
 .about-content {
-  padding-bottom: 48px;
+  margin-bottom: 48px;
 }
 
 .quote {
@@ -341,53 +342,54 @@ cite {
   display: block;
 }
 
-.quote cite .body-md {
-  margin-top: 4px;
+.cite-name {
+  margin: 12px 0px 4px;
+}
+
+.cite-picture {
+  margin-top: 24px;
 }
 
 /*solution*/
 .solution {
   background-color: var(--color-background-main);
   text-align: center;
-  padding-top: 124px;
-  padding-bottom: 84px;
+  padding: 124px 40px 84px;
 }
 
 .solution-text {
-  padding-top: 20px;
-  padding-bottom: 64px;
+  margin-block: 20px 64px;
+  margin-inline: auto;
   line-height: 1;
   color: var(--color-text-secondary);
   max-width: 808px;
-  margin: auto;
 }
 
-.solution-ul {
+.solution-card-container {
   display: flex;
   gap: 41px;
 }
 
-.solution-ul li {
-  margin-left: 32px;
-  margin-right: 32px;
+.solution-ul-item {
+  padding: 32px;
   flex: 1;
 }
 
-.solution-h3 {
-  padding-top: 76px;
+.solution-card-head {
+  padding-top: 52px;
   padding-bottom: 12px;
 }
 
 /*recomendation*/
 .recomendation {
   background-color: var(--color-background-main);
-  padding-bottom: 124px;
+  padding: 24px 40px 124px;
 }
 
 .recomendation-wrapper {
   display: flex;
   gap: 100px;
-  padding: 24px 0px 64px;
+  margin-bottom: 64px;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -402,6 +404,7 @@ cite {
 
 .recomendation-tab {
   display: flex;
+  gap: 8px;
   align-items: center;
   justify-content: center;
 }
@@ -410,7 +413,6 @@ cite {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  padding: 0;
   margin-top: 48px;
 }
 
@@ -508,7 +510,7 @@ cite {
 /*features*/
 .features {
   background-color: var(--color-background-secondary);
-  padding: 84px 0px 80px;
+  padding: 84px 40px 80px;
 }
 
 .features .content-wrapper {
@@ -519,7 +521,7 @@ cite {
 }
 
 .feature-text {
-  max-width: 998;
+  max-width: 998px;
   margin: 20px 0px 64px;
 }
 
@@ -538,8 +540,6 @@ cite {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 20px;
-  padding: 0;
-  margin: 0;
   list-style: none;
   width: 100%;
 }
@@ -552,8 +552,13 @@ cite {
   grid-column: span 3;
 }
 
+.feature-margin.wrapper {
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
 .feature-card-wrapper {
-  padding: 29px 0px 30px;
+  padding: 29px 7px 30px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -570,7 +575,7 @@ cite {
 /*faq*/
 .faq {
   background-color: var(--color-background-secondary);
-  padding-bottom: 145px;
+  padding: 0px 40px 141px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -585,7 +590,7 @@ cite {
 .details {
   border-radius: 32px;
   background-color: var(--color-background-details);
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   text-align: left;
   width: 100%;
 }
@@ -673,7 +678,7 @@ cite {
 /*footer*/
 .footer {
   background-color: var(--color-background-main);
-  padding: 80px 0 40px;
+  padding: 80px 40px 40px;
 }
 
 .footer-logo {
@@ -757,12 +762,12 @@ cite {
   padding-bottom: 24px;
 }
 
-.footer-links li {
+.footer-links-item {
   margin-bottom: 16px;
   letter-spacing: 0%;
   line-height: 18px;
 }
 
-.footer-links li:last-child {
+.footer-links-item:last-child {
   margin-bottom: 0;
 }
