@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header header-content content-wrapper-narrow">
       <a href="#main">
         <img src="images/logo.svg" width="28" height="28" alt="Logo white" />
         <p class="header-logo">
@@ -23,745 +23,868 @@
         </p>
       </a>
       <nav>
-        <ul>
+        <ul class="header-links-list">
           <li><a href="#about_us" class="header-nav-link">About us</a></li>
-          <li><a href="#solutions" class="header-nav-link">Solutions</a></li>
+          <li><a href="#solution" class="header-nav-link">Solutions</a></li>
           <li><a href="#features" class="header-nav-link">Features</a></li>
           <li><a href="#faq" class="header-nav-link">FAQ</a></li>
           <li><a href="#contact" class="header-nav-link">Contact Us</a></li>
         </ul>
       </nav>
       <div class="header-button">
-        <button type="button" class="button is-secondary">Register</button>
-        <button type="button" class="button">Login</button>
+        <button type="button" class="button button-secondary button-header">
+          Register
+        </button>
+        <button type="button" class="button button-header">Login</button>
       </div>
     </header>
     <main>
       <section id="main" class="entrance">
-        <h1 class="subtitle-lg color-text-quaternary">
-          Dream Home Discovery: Browse Premier Listings Today!
-        </h1>
-        <p class="color-text-quaternary">
-          Embark on a journey to discover your dream home by exploring our
-          premier listings available for browsing today.
-        </p>
-        <a href="" class="slider-button">
-          <img
-            src="images/downarrow.svg"
-            width="16"
-            height="16"
-            alt="arrow icon"
-          />
-        </a>
-        <ul>
-          <li class="color-text-quaternary">
-            <span class="subtitle-md">432</span> Partners
-          </li>
-          <li class="color-text-quaternary">
-            <span class="subtitle-md">12.6K</span> Properties
-          </li>
-          <li class="color-text-quaternary">
-            <span class="subtitle-md">480k</span> Customers
-          </li>
-        </ul>
+        <div class="content-wrapper-narrow">
+          <h1 class="subtitle-lg color-text-quaternary">
+            Dream Home Discovery: Browse Premier Listings Today!
+          </h1>
+          <p class="color-text-quaternary main-small-text">
+            Embark on a journey to discover your dream home by exploring our
+            premier listings available for browsing today.
+          </p>
+          <a href="" class="slider-button">
+            <img
+              src="images/downarrow.svg"
+              width="24"
+              height="24"
+              alt="arrow icon"
+            />
+          </a>
+          <ul class="main-list">
+            <li class="color-text-quaternary">
+              <span class="subtitle-md main-results">432</span> Partners
+            </li>
+            <li class="color-text-quaternary">
+              <span class="subtitle-md main-results">12.6K</span> Properties
+            </li>
+            <li class="color-text-quaternary">
+              <span class="subtitle-md main-results">80k</span> Customers
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="about_us" class="about">
-        <div>
+        <div class="content-wrapper about-wrapper">
           <h2 class="headline-md color-text-primary">About Us</h2>
-          <div class="about-content">
-            <p class="headline-lg color-text-tertiary">
-              Welcome to <span class="highlight">Mai Home</span>, your premier
-              destination for real estate solutions:
-            </p>
-            <ul class="about-list">
-              <li class="headline-lg color-text-tertiary">
-                Your top choice for excellence in real estate solutions;
-              </li>
-              <li class="headline-lg color-text-tertiary">
-                Passionately connecting people with their ideal homes;
-              </li>
-              <li class="headline-lg color-text-tertiary">
-                A beacon of industry trust and professional integrity.
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div>
-        <div class="about-img"></div>
-          <blockquote class="quote">
-            <p class="body-lg color-text-primary">
-              "I'm incredibly pleased with the service provided by UrbanNest.
-              Their professionalism and dedication were evident throughout the
-              process, ultimately leading me to my dream home. I highly
-              recommend their services to anyone seeking a seamless real estate
-              experience."
-            </p>
-            <div class="cody-img">
-              <img
-                src="images/codyfisher.webp"
-                width="64"
-                height="64"
-                alt="Cody Fisher miniature"
-              />
+          <div class="about-right-column">
+            <div class="about-text-wrapper">
+              <div class="about-content">
+                <p class="headline-lg color-text-tertiary">
+                  Welcome to <span class="highlight">Mai Home</span>, your
+                  premier destination for real estate solutions:
+                </p>
+                <ul class="about-list">
+                  <li class="headline-lg color-text-tertiary">
+                    Your top choice for excellence in real estate solutions;
+                  </li>
+                  <li class="headline-lg color-text-tertiary">
+                    Passionately connecting people with their ideal homes;
+                  </li>
+                  <li class="headline-lg color-text-tertiary">
+                    A beacon of industry trust and professional integrity.
+                  </li>
+                </ul>
+              </div>
             </div>
-            <cite>
-              <span class="headline-sm color-text-primary">Cody Fisher</span>
-              <span class="body-md color-text-secondary">
-                Manager at Surya Company
-                </span>
-            </cite>
-          </blockquote>
+            <div class="about-block-wrapper">
+              <div class="about-img"></div>
+              <blockquote class="quote">
+                <p class="body-lg color-text-primary">
+                  "I'm incredibly pleased with the service provided by
+                  UrbanNest. Their professionalism and dedication were evident
+                  throughout the process, ultimately leading me to my dream
+                  home. I highly recommend their services to anyone seeking a
+                  seamless real estate experience."
+                </p>
+                <div class="cite-picture">
+                  <img
+                    src="images/codyfisher.webp"
+                    width="64"
+                    height="64"
+                    alt="Cody Fisher miniature"
+                  />
+                </div>
+                <cite class="cite-description">
+                  <span class="headline-sm color-text-primary cite-name"
+                    >Cody Fisher</span
+                  >
+                  <span class="body-md color-text-secondary">
+                    Manager at Surya Company
+                  </span>
+                </cite>
+              </blockquote>
+            </div>
+          </div>
         </div>
       </section>
       <section id="solution" class="solution">
-        <h2 class="subtitle-sm color-text-primary">
-          Tailored Real Estate Solutions for You
-        </h2>
-        <p class="solution-text color-text-secondary">
-          Unlock the perfect property. Discover tailored real estate solutions
-          designed to meet your needs with precision and expertise.
-        </p>
-        <ul>
-          <li>
-            <img
-              src="images/search.webp"
-              width="104"
-              height="104"
-              alt="search icon"
-            />
-            <h3 class="headline-md">Property Search and Listing</h3>
-            <p class="body-lg color-text-tertiary">
-              Discover available properties, uncover your ideal living space,
-              start exploring now.
-            </p>
-          </li>
-          <li>
-            <img
-              src="images/analize.webp"
-              width="104"
-              height="104"
-              alt="statistic icon"
-            />
-            <h3 class="headline-md">Property Valuation</h3>
-            <p class="body-lg color-text-tertiary">
-              Thorough property assessment, accurate valuations, crucial for
-              informed real estate decisions.
-            </p>
-          </li>
-          <li>
-            <img
-              src="images/home.webp"
-              width="104"
-              height="104"
-              alt="home icon"
-            />
-            <h3 class="headline-md">Property Management</h3>
-            <p class="body-lg color-text-tertiary">
-              Professional property oversight, maximizing profitability, and
-              preserving asset value seamlessly.
-            </p>
-          </li>
-        </ul>
-      </section>
-
-      <section id="recomendation" class="recomendation">
-        <h2 class="subtitle-sm color-text-primary">
-          Real Estate Recommendation Of The Day
-        </h2>
-        <p class="body-lg color-text-secondary">
-          Introducing our daily feature: 'Real Estate Recommendation of the
-          Day.' Explore carefully curated listings to find your perfect property
-          match and make informed decisions effortlessly
-        </p>
-        <ul>
-          <li>
-            <button type="button" class="tab is-active">All (40+)</button>
-          </li>
-          <li><button type="button" class="tab">Home (6)</button></li>
-          <li><button type="button" class="tab">Apartment (14)</button></li>
-          <li><button type="button" class="tab">Guesthouse (8)</button></li>
-          <li><button type="button" class="tab">Hotel (12)</button></li>
-        </ul>
-        <ul>
-          <li>
-            <article>
-              <a href="">
-                <img
-                  class="card-img"
-                  src="images/app1.webp"
-                  width="440" 
-                  height="206"
-                  alt="Dreamland Estates"
-                />
-                <div class="card-button">
-                  <img
-                    src="images/arrowupright.svg"
-                    width="14"
-                    height="14"
-                    alt="arrow icon"
-                  />
-                </div>
-                <h3 class="headline-sm color-text-primary">
-                  Dreamland Estates
-                </h3>
-                <div>
-                  <p class="discount-text">(-41%)</p>
-                  <p class="price-text">$611,520</p>
-                </div>
-                <div>
-                  <img
-                    src="images/geotag.svg"
-                    width="11"
-                    height="13"
-                    alt="geotag icon"
-                  />
-                  <p class="body-md color-text-secondary">
-                    St. Utica, Pennsylvania 57867
-                  </p>
-                </div>
-                <div>
-                  <img
-                    src="images/star48.svg"
-                    width="91"
-                    height="15"
-                    alt="star"
-                  />
-                  <p class="body-sm color-text-secondary">4,8/5</p>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <a href="">
-                <img
-                  class="card-img"
-                  src="images/app2.webp"
-                  width="440" 
-                  height="206"
-                  alt="Visionary Vistas"
-                />
-                <div class="card-button">
-                  <img
-                    src="images/arrowupright.svg"
-                    width="14"
-                    height="14"
-                    alt="arrow icon"
-                  />
-                </div>
-                <h3 class="headline-sm color-text-primary">
-                  Visionary Vistas Realty
-                </h3>
-                <div>
-                  <p class="discount-text">(-41%)</p>
-                  <p class="price-text">$611,520</p>
-                </div>
-                <div>
-                  <img
-                    src="images/geotag.svg"
-                    width="11"
-                    height="13"
-                    alt="geotag icon"
-                  />
-                  <p class="body-md color-text-secondary">
-                    Cir. Shiloh, Hawaii 81063
-                  </p>
-                </div>
-                <div>
-                  <img
-                    src="images/star48.svg"
-                    width="91"
-                    height="15"
-                    alt="star"
-                  />
-                  <p class="body-sm color-text-secondary">4,8/5</p>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <a href="">
-                <img
-                  class="card-img"
-                  src="images/app3.webp"
-                  width="440" 
-                  height="206"
-                  alt="Tranquil Haven Homes"
-                />
-                <div class="card-button">
-                  <img
-                    src="images/arrowupright.svg"
-                    width="14"
-                    height="14"
-                    alt="arrow icon"
-                  />
-                </div>
-                <h3 class="headline-sm color-text-primary">
-                  Tranquil Haven Homes
-                </h3>
-                <div>
-                  <p class="discount-text">(-41%)</p>
-                  <p class="price-text">$611,520</p>
-                </div>
-                <div>
-                  <img
-                    src="images/geotag.svg"
-                    width="11"
-                    height="13"
-                    alt="geotag icon"
-                  />
-                  <p class="body-md color-text-secondary">
-                    St. Celina, Delaware 10299
-                  </p>
-                </div>
-                <div>
-                  <img
-                    src="images/star48.svg"
-                    width="91"
-                    height="15"
-                    alt="star"
-                  />
-                  <p class="body-sm color-text-secondary">4,8/5</p>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <a href="">
-                <img
-                  class="card-img"
-                  src="images/app4.webp"
-                  width="440" 
-                  height="206"
-                  alt="Meadow Brook Estates"
-                />
-                <div class="card-button">
-                  <img
-                    src="images/arrowupright.svg"
-                    width="14"
-                    height="14"
-                    alt="arrow icon"
-                  />
-                </div>
-                <h3 class="headline-sm color-text-primary">
-                  Meadow Brook Estates
-                </h3>
-                <div>
-                  <p class="discount-text">(-41%)</p>
-                  <p class="price-text">$611,520</p>
-                </div>
-                <div>
-                  <img
-                    src="images/geotag.svg"
-                    width="11"
-                    height="13"
-                    alt="geotag icon"
-                  />
-                  <p class="body-md color-text-secondary">
-                    St. Utica, Pennsylvania 57867
-                  </p>
-                </div>
-                <div>
-                  <img
-                    src="images/star48.svg"
-                    width="91"
-                    height="15"
-                    alt="star"
-                  />
-                  <p class="body-sm color-text-secondary">4,8/5</p>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <a href="">
-                <img
-                  class="card-img"
-                  src="images/app5.webp"
-                  width="440" 
-                  height="206"
-                  alt="Aspen Ridge Estates"
-                />
-                <div class="card-button">
-                  <img
-                    src="images/arrowupright.svg"
-                    width="14"
-                    height="14"
-                    alt="arrow icon"
-                  />
-                </div>
-                <h3 class="headline-sm color-text-primary">
-                  Aspen Ridge Estates
-                </h3>
-                <div>
-                  <p class="discount-text">(-41%)</p>
-                  <p class="price-text">$611,520</p>
-                </div>
-                <div>
-                  <img
-                    src="images/geotag.svg"
-                    width="11"
-                    height="13"
-                    alt="geotag icon"
-                  />
-                  <p class="body-md color-text-secondary">
-                    St. Utica, Pennsylvania 57867
-                  </p>
-                </div>
-                <div>
-                  <img
-                    src="images/star40.svg"
-                    width="91"
-                    height="15"
-                    alt="star"
-                  />
-                  <p class="body-sm color-text-secondary">4,0/5</p>
-                </div>
-              </a>
-            </article>
-          </li>
-          <li>
-            <article>
-              <a href="">
-                <img
-                  class="card-img"
-                  src="images/app6.webp"
-                  width="440" 
-                  height="206"
-                  alt="Harmony Hills Realty"
-                />
-                <div class="card-button">
-                  <img
-                    src="images/arrowupright.svg"
-                    width="14"
-                    height="14"
-                    alt="arrow icon"
-                  />
-                </div>
-                <h3 class="headline-sm color-text-primary">
-                  Harmony Hills Realty
-                </h3>
-                <div>
-                  <p class="discount-text">(-41%)</p>
-                  <p class="price-text">$611,520</p>
-                </div>
-                <div>
-                  <img
-                    src="images/geotag.svg"
-                    width="11"
-                    height="13"
-                    alt="geotag icon"
-                  />
-                  <p class="body-md color-text-secondary">
-                    St. Utica, Pennsylvania 57867
-                  </p>
-                </div>
-                <div>
-                  <img
-                    src="images/star48.svg"
-                    width="91"
-                    height="15"
-                    alt="star"
-                  />
-                  <p class="body-sm color-text-secondary">4,8/5</p>
-                </div>
-              </a>
-            </article>
-          </li>
-        </ul>
-        <a href="" class="learn-more">
-          Learn more
-          <img
-            src="images/arrowupright.svg"
-            width="14"
-            height="14"
-            alt="learn more arrow"
-          />
-        </a>
-      </section>
-      <section id="features" class="features">
-        <h2 class="subtitle-sm">
-          Exceptional Features for Real Estate Excellence
-        </h2>
-        <p class="body-lg color-text-secondary">
-          Discover standout features elevating real estate experiences, ensuring
-          excellence and efficiency in every interaction. Explore now for
-          unparalleled service.
-        </p>
-        <ul>
-          <li>
-            <article class="feature-article">
+        <div class="content-wrapper">
+          <h2 class="subtitle-sm color-text-primary">
+            Tailored Real Estate Solutions for You
+          </h2>
+          <p class="solution-text color-text-secondary">
+            Unlock the perfect property. Discover tailored real estate solutions
+            designed to meet your needs with precision and expertise.
+          </p>
+          <ul class="solution-card-container">
+            <li class="solution-list-item">
               <img
-                src="images/feature_instant.webp"
-                width="533" 
-                height="302"
-                alt="Instant process example"
+                src="images/search.webp"
+                width="104"
+                height="104"
+                alt="search icon"
               />
-              <h3 class="headline-md">Instant process to get house dream</h3>
-              <p class="body-lg color-text-tertiary">
-                FramerAuth validates user's access rights to tiered plans
-                ensuring a seamless user experience
-              </p>
-            </article>
-          </li>
-          <li>
-            <article class="feature-article">
-              <img src="images/feature_discount.webp" alt="Discount example" 
-                width="808" 
-                height="302"/>
-              <h3 class="headline-md">Discount Up to 50% for new user</h3>
-              <p class="body-lg color-text-tertiary">
-                Don't miss out on this incredible opportunity to find your dream
-                home at unbeatable prices!
-              </p>
-            </article>
-          </li>
-          <li>
-            <article class="feature-article">
-              <img src="images/feature_search.webp" alt="Search example" 
-                width="820" 
-                height="302"/>
-              <h3 class="headline-md">
-                Use Generated Search for find your Location
+              <h3 class="headline-md solution-card-head">
+                Property Search and Listing
               </h3>
               <p class="body-lg color-text-tertiary">
-                Utilise Generated Search to pinpoint your precise geographical
-                location accurately and efficiently
+                Discover available properties, uncover your ideal living space,
+                start exploring now.
               </p>
-            </article>
-          </li>
-          <li>
-            <article class="feature-article">
-              <img src="images/feature_partners.webp" alt="Partners example" 
-              width="520" 
-                height="302"/>
-              <h3 class="headline-md">More Than 1 Million Partners</h3>
+            </li>
+            <li class="solution-list-item">
+              <img
+                src="images/analize.webp"
+                width="104"
+                height="104"
+                alt="statistic icon"
+              />
+              <h3 class="headline-md solution-card-head">Property Valuation</h3>
               <p class="body-lg color-text-tertiary">
-                Connecting over one million partners for real estate
+                Thorough property assessment, accurate valuations, crucial for
+                informed real estate decisions.
               </p>
-            </article>
-          </li>
-        </ul>
+            </li>
+            <li class="solution-list-item">
+              <img
+                src="images/home.webp"
+                width="104"
+                height="104"
+                alt="home icon"
+              />
+              <h3 class="headline-md solution-card-head">
+                Property Management
+              </h3>
+              <p class="body-lg color-text-tertiary">
+                Professional property oversight, maximizing profitability, and
+                preserving asset value seamlessly.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="recomendation" class="recomendation">
+        <div class="content-wrapper">
+          <div class="recomendation-wrapper">
+            <h2 class="subtitle-sm color-text-primary recomendation-title">
+              Real Estate Recommendation Of The Day
+            </h2>
+            <p class="body-lg color-text-secondary recomendation-text">
+              Introducing our daily feature: 'Real Estate Recommendation of the
+              Day.' Explore carefully curated listings to find your perfect
+              property match and make informed decisions effortlessly
+            </p>
+          </div>
+          <ul class="recomendation-tab">
+            <li>
+              <button type="button" class="tab button is-active">
+                All (40+)
+              </button>
+            </li>
+            <li><button type="button" class="tab button">Home (6)</button></li>
+            <li>
+              <button type="button" class="tab button">Apartment (14)</button>
+            </li>
+            <li>
+              <button type="button" class="tab button">Guesthouse (8)</button>
+            </li>
+            <li>
+              <button type="button" class="tab button">Hotel (12)</button>
+            </li>
+          </ul>
+          <ul class="recomendation-list">
+            <li>
+              <article>
+                <a class="recomendation-card" href="">
+                  <div class="card-image-wrapper">
+                    <img
+                      class="card-img"
+                      src="images/app1.webp"
+                      width="440"
+                      height="206"
+                      alt="Dreamland Estates"
+                    />
+                    <div class="card-button">
+                      <img
+                        src="images/arrowupright.svg"
+                        width="24"
+                        height="24"
+                        alt="arrow icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-row">
+                      <h3 class="headline-sm color-text-primary">
+                        Dreamland Estates
+                      </h3>
+                      <div class="card-price-group">
+                        <p class="discount-text">(-41%)</p>
+                        <p class="price-text">$611,520</p>
+                      </div>
+                    </div>
+                    <div class="card-geo">
+                      <img
+                        src="images/geotag.svg"
+                        width="11"
+                        height="13"
+                        alt="geotag icon"
+                      />
+                      <p class="body-md color-text-secondary">
+                        St. Utica, Pennsylvania 57867
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <img
+                        src="images/star48.svg"
+                        width="91"
+                        height="15"
+                        alt="star"
+                      />
+                      <p class="body-sm color-text-secondary">4,8/5</p>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <a class="recomendation-card" href="">
+                  <div class="card-image-wrapper">
+                    <img
+                      class="card-img"
+                      src="images/app2.webp"
+                      width="440"
+                      height="206"
+                      alt="Visionary Vistas"
+                    />
+                    <div class="card-button">
+                      <img
+                        src="images/arrowupright.svg"
+                        width="24"
+                        height="24"
+                        alt="arrow icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-row">
+                      <h3 class="headline-sm color-text-primary">
+                        Visionary Vistas Realty
+                      </h3>
+                      <div class="card-price-group">
+                        <p class="discount-text">(-41%)</p>
+                        <p class="price-text">$611,520</p>
+                      </div>
+                    </div>
+                    <div class="card-geo">
+                      <img
+                        src="images/geotag.svg"
+                        width="11"
+                        height="13"
+                        alt="geotag icon"
+                      />
+                      <p class="body-md color-text-secondary">
+                        Cir. Shiloh, Hawaii 81063
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <img
+                        src="images/star48.svg"
+                        width="91"
+                        height="15"
+                        alt="star"
+                      />
+                      <p class="body-sm color-text-secondary">4,8/5</p>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <a class="recomendation-card" href="">
+                  <div class="card-image-wrapper">
+                    <img
+                      class="card-img"
+                      src="images/app3.webp"
+                      width="440"
+                      height="206"
+                      alt="Tranquil Haven Homes"
+                    />
+                    <div class="card-button">
+                      <img
+                        src="images/arrowupright.svg"
+                        width="24"
+                        height="24"
+                        alt="arrow icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-row">
+                      <h3 class="headline-sm color-text-primary">
+                        Tranquil Haven Homes
+                      </h3>
+                      <div class="card-price-group">
+                        <p class="discount-text">(-41%)</p>
+                        <p class="price-text">$611,520</p>
+                      </div>
+                    </div>
+                    <div class="card-geo">
+                      <img
+                        src="images/geotag.svg"
+                        width="11"
+                        height="13"
+                        alt="geotag icon"
+                      />
+                      <p class="body-md color-text-secondary">
+                        St. Celina, Delaware 10299
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <img
+                        src="images/star48.svg"
+                        width="91"
+                        height="15"
+                        alt="star"
+                      />
+                      <p class="body-sm color-text-secondary">4,8/5</p>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <a class="recomendation-card" href="">
+                  <div class="card-image-wrapper">
+                    <img
+                      class="card-img"
+                      src="images/app4.webp"
+                      width="440"
+                      height="206"
+                      alt="Meadow Brook Estates"
+                    />
+                    <div class="card-button">
+                      <img
+                        src="images/arrowupright.svg"
+                        width="24"
+                        height="24"
+                        alt="arrow icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-row">
+                      <h3 class="headline-sm color-text-primary">
+                        Meadow Brook Estates
+                      </h3>
+                      <div class="card-price-group">
+                        <p class="discount-text">(-41%)</p>
+                        <p class="price-text">$611,520</p>
+                      </div>
+                    </div>
+                    <div class="card-geo">
+                      <img
+                        src="images/geotag.svg"
+                        width="11"
+                        height="13"
+                        alt="geotag icon"
+                      />
+                      <p class="body-md color-text-secondary">
+                        St. Utica, Pennsylvania 57867
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <img
+                        src="images/star48.svg"
+                        width="91"
+                        height="15"
+                        alt="star"
+                      />
+                      <p class="body-sm color-text-secondary">4,8/5</p>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <a class="recomendation-card" href="">
+                  <div class="card-image-wrapper">
+                    <img
+                      class="card-img"
+                      src="images/app5.webp"
+                      width="440"
+                      height="206"
+                      alt="Aspen Ridge Estates"
+                    />
+                    <div class="card-button">
+                      <img
+                        src="images/arrowupright.svg"
+                        width="24"
+                        height="24"
+                        alt="arrow icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-row">
+                      <h3 class="headline-sm color-text-primary">
+                        Aspen Ridge Estates
+                      </h3>
+                      <div class="card-price-group">
+                        <p class="discount-text">(-41%)</p>
+                        <p class="price-text">$611,520</p>
+                      </div>
+                    </div>
+                    <div class="card-geo">
+                      <img
+                        src="images/geotag.svg"
+                        width="11"
+                        height="13"
+                        alt="geotag icon"
+                      />
+                      <p class="body-md color-text-secondary">
+                        St. Utica, Pennsylvania 57867
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <img
+                        src="images/star40.svg"
+                        width="91"
+                        height="15"
+                        alt="star"
+                      />
+                      <p class="body-sm color-text-secondary">4,0/5</p>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </li>
+            <li>
+              <article>
+                <a class="recomendation-card" href="">
+                  <div class="card-image-wrapper">
+                    <img
+                      class="card-img"
+                      src="images/app6.webp"
+                      width="440"
+                      height="206"
+                      alt="Harmony Hills Realty"
+                    />
+                    <div class="card-button">
+                      <img
+                        src="images/arrowupright.svg"
+                        width="24"
+                        height="24"
+                        alt="arrow icon"
+                      />
+                    </div>
+                  </div>
+                  <div class="card-content">
+                    <div class="card-row">
+                      <h3 class="headline-sm color-text-primary">
+                        Harmony Hills Realty
+                      </h3>
+                      <div class="card-price-group">
+                        <p class="discount-text">(-41%)</p>
+                        <p class="price-text">$611,520</p>
+                      </div>
+                    </div>
+                    <div class="card-geo">
+                      <img
+                        src="images/geotag.svg"
+                        width="11"
+                        height="13"
+                        alt="geotag icon"
+                      />
+                      <p class="body-md color-text-secondary">
+                        St. Utica, Pennsylvania 57867
+                      </p>
+                    </div>
+                    <div class="card-rating">
+                      <img
+                        src="images/star48.svg"
+                        width="91"
+                        height="15"
+                        alt="star"
+                      />
+                      <p class="body-sm color-text-secondary">4,8/5</p>
+                    </div>
+                  </div>
+                </a>
+              </article>
+            </li>
+          </ul>
+          <a href="" class="learn-more button">
+            Learn more
+            <img
+              src="images/arrowupblack.svg"
+              width="14"
+              height="14"
+              alt="learn more arrow"
+            />
+          </a>
+        </div>
+      </section>
+      <section id="features" class="features">
+        <div class="content-wrapper">
+          <h2 class="subtitle-sm">
+            Exceptional Features for Real Estate Excellence
+          </h2>
+          <p class="body-lg color-text-secondary feature-text">
+            Discover standout features elevating real estate experiences,
+            ensuring excellence and efficiency in every interaction. Explore now
+            for unparalleled service.
+          </p>
+          <ul class="features-list">
+            <li class="feature-card-small">
+              <article class="feature-article">
+                <img
+                  class="feature-img"
+                  src="images/feature_instant.webp"
+                  width="533"
+                  height="302"
+                  alt="Instant process example"
+                />
+                <div class="feature-card-wrapper">
+                  <h3 class="headline-md">
+                    Instant process to get house dream
+                  </h3>
+                  <p class="body-lg color-text-tertiary">
+                    FramerAuth validates user's access rights to tiered plans
+                    ensuring a seamless user experience
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="feature-card-big">
+              <article class="feature-article">
+                <img
+                  class="feature-img"
+                  src="images/feature_discount.webp"
+                  alt="Discount example"
+                  width="808"
+                  height="302"
+                />
+                <div class="feature-card-wrapper">
+                  <h3 class="headline-md">Discount Up to 50% for new user</h3>
+                  <p class="body-lg color-text-tertiary">
+                    Don't miss out on this incredible opportunity to find your
+                    dream home at unbeatable prices!
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="feature-card-big">
+              <article class="feature-article">
+                <img
+                  class="feature-img"
+                  src="images/feature_search.webp"
+                  alt="Search example"
+                  width="820"
+                  height="302"
+                />
+                <div class="feature-card-wrapper">
+                  <h3 class="headline-md">
+                    Use Generated Search for find your Location
+                  </h3>
+                  <p class="body-lg color-text-tertiary">
+                    Utilise Generated Search to pinpoint your precise
+                    geographical location accurately and efficiently
+                  </p>
+                </div>
+              </article>
+            </li>
+            <li class="feature-card-small">
+              <article class="feature-article">
+                <img
+                  class="feature-img"
+                  src="images/feature_partners.webp"
+                  alt="Partners example"
+                  width="532"
+                  height="302"
+                />
+                <div class="feature-card-wrapper">
+                  <h3 class="headline-md">More Than 1 Million Partners</h3>
+                  <p class="body-lg color-text-tertiary">
+                    Connecting over one million partners for real estate
+                  </p>
+                </div>
+              </article>
+            </li>
+          </ul>
+        </div>
       </section>
       <section id="faq" class="faq">
-        <h2 class="subtitle-sm">Frequently Asked Questions (FAQ)</h2>
-        <p class="body-lg color-text-secondary">
-          Quickly find answers to common real estate queries in our
-          comprehensive FAQ section. Simplify your property journey
-          effortlessly.
-        </p>
-        <details class="details">
-          <summary class="summary headline-lg">
-            How do I start the home buying process?
-            <span class="button button-secondary">
-              <img
-                src="images/plusicon.svg"
-                width="14"
-                height="14"
-                alt="plus open icon"
-              />
-            </span>
-          </summary>
-          <p class="body-lg color-text-tertiary">
-            Begin by determining your budget and preferences. Then, explore
-            listings online or contact a real estate agent to help you find
-            suitable properties.
+        <div class="content-wrapper">
+          <h2 class="subtitle-sm">Frequently Asked Questions (FAQ)</h2>
+          <p class="body-lg color-text-secondary faq-text">
+            Quickly find answers to common real estate queries in our
+            comprehensive FAQ section. Simplify your property journey
+            effortlessly.
           </p>
-        </details>
-        <details class="details">
-          <summary class="summary headline-lg">
-            What factors should I consider when choosing a neighborhood?
-            <span class="button button-secondary">
-              <img
-                src="images/plusicon.svg"
-                width="14"
-                height="14"
-                alt="plus open icon"
-              />
-            </span>
-          </summary>
-          <p class="body-lg color-text-tertiary">Some text for block 2</p>
-        </details>
-        <details class="details">
-          <summary class="summary headline-lg">
-            How can I determine the value of my property?
-            <span class="button button-secondary">
-              <img
-                src="images/plusicon.svg"
-                width="14"
-                height="14"
-                alt="plus open icon"
-              />
-            </span>
-          </summary>
-          <p class="body-lg color-text-tertiary">Some text for block 3</p>
-        </details>
-        <details class="details">
-          <summary class="summary headline-lg">
-            What steps are involved in selling a home?
-            <span class="button button-secondary">
-              <img
-                src="images/plusicon.svg"
-                width="14"
-                height="14"
-                alt="plus open icon"
-              />
-            </span>
-          </summary>
-          <p class="body-lg color-text-tertiary">Some text for block 4</p>
-        </details>
-        <details class="details">
-          <summary class="summary headline-lg">
-            How can I improve my credit score before applying for a mortgage?
-            <span class="button button-secondary">
-              <img
-                src="images/plusicon.svg"
-                width="14"
-                height="14"
-                alt="plus open icon"
-              />
-            </span>
-          </summary>
-          <p class="body-lg color-text-tertiary">Some text for block 5</p>
-        </details>
+          <details class="details">
+            <summary class="summary headline-lg">
+              How do I start the home buying process?
+              <span class="button button-secondary faq-button">
+                <img
+                  src="images/plusicon.svg"
+                  width="24"
+                  height="24"
+                  alt="plus open icon"
+                />
+              </span>
+            </summary>
+            <p class="body-lg color-text-tertiary faq-answer">
+              Begin by determining your budget and preferences. Then, explore
+              listings online or contact a real estate agent to help you find
+              suitable properties.
+            </p>
+          </details>
+          <details class="details">
+            <summary class="summary headline-lg">
+              What factors should I consider when choosing a neighborhood?
+              <span class="button button-secondary faq-button">
+                <img
+                  src="images/plusicon.svg"
+                  width="24"
+                  height="24"
+                  alt="plus open icon"
+                />
+              </span>
+            </summary>
+            <p class="body-lg color-text-tertiary faq-answer">
+              Some text for block 2
+            </p>
+          </details>
+          <details class="details">
+            <summary class="summary headline-lg">
+              How can I determine the value of my property?
+              <span class="button button-secondary faq-button">
+                <img
+                  src="images/plusicon.svg"
+                  width="24"
+                  height="24"
+                  alt="plus open icon"
+                />
+              </span>
+            </summary>
+            <p class="body-lg color-text-tertiary faq-answer">
+              Some text for block 3
+            </p>
+          </details>
+          <details class="details">
+            <summary class="summary headline-lg">
+              What steps are involved in selling a home?
+              <span class="button button-secondary faq-button">
+                <img
+                  src="images/plusicon.svg"
+                  width="24"
+                  height="24"
+                  alt="plus open icon"
+                />
+              </span>
+            </summary>
+            <p class="body-lg color-text-tertiary faq-answer">
+              Some text for block 4
+            </p>
+          </details>
+          <details class="details">
+            <summary class="summary headline-lg">
+              How can I improve my credit score before applying for a mortgage?
+              <span class="button button-secondary faq-button">
+                <img
+                  src="images/plusicon.svg"
+                  width="24"
+                  height="24"
+                  alt="plus open icon"
+                />
+              </span>
+            </summary>
+            <p class="body-lg color-text-tertiary faq-answer">
+              Some text for block 5
+            </p>
+          </details>
+        </div>
       </section>
       <section id="contact" class="contact">
-        <h2 class="subtitle-sm color-text-quaternary">
-          Start Your Real Estate Journey Here
-        </h2>
-        <p class="body-lg color-text-quaternary">
-          Embark on your real estate journey today. Explore our listings and
-          find the perfect property to call home.
-        </p>
-        <img
-          src="images/smiling_guy.webp"
-          width="1001"
-          height="563"
-          alt="smyling guy"
-        />
+        <div class="content-wrapper contact-grid">
+          <div class="contact-info">
+            <h2 class="subtitle-sm color-text-quaternary">
+              Start Your Real Estate Journey Here
+            </h2>
+            <p class="body-lg color-text-quaternary">
+              Embark on your real estate journey today. Explore our listings and
+              find the perfect property to call home.
+            </p>
+          </div>
+          <div class="contact-image-box">
+            <img
+              src="images/smiling_guy.webp"
+              width="898"
+              height="563"
+              alt="smyling guy"
+            />
+          </div>
+        </div>
       </section>
     </main>
     <footer id="footer" class="footer">
-      <div>
-        <div>
-          <a href="">
-            <img
-              src="images/logoblack.svg"
-              width="28"
-              height="28"
-              class="footer-logo-icon"
-              alt="Mai Home Logo black"
-            />
-            <p>
-              Mai
-              <span class="text-heavy">Home</span>
+      <div class="content-wrapper">
+        <div class="footer-grid">
+          <div class="footer-col footer-info">
+            <a href="" class="footer-logo-link">
+              <img
+                src="images/logoblack.svg"
+                width="28"
+                height="28"
+                class="footer-logo-icon"
+                alt="Mai Home Logo black"
+              />
+              <span class="footer-logo">
+                Mai <span class="text-heavy">Home</span>
+              </span>
+            </a>
+            <p class="body-lg color-text-tertiary">
+              Explore our extensive listings of properties, ranging from cozy
+              apartments to luxurious estates, meticulously curated to cater to
+              diverse tastes and lifestyles.
             </p>
-          </a>
-          <p class="body-lg color-text-tertiary">
-            Explore our extensive listings of properties, ranging from cozy
-            apartments to luxurious estates, meticulously curated to cater to
-            diverse tastes and lifestyles.
-          </p>
-          <ul>
-            <li>
-              <a
-                href="https://www.instagram.com"
-                class="social inst_color"
-                target="_blank"
-              >
-                <img
-                  src="images/instagram.svg"
-                  width="21"
-                  height="21"
-                  alt="instagram"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.facebook.com"
-                class="social fb_color"
-                target="_blank"
-              >
-                <img
-                  src="images/facebook.svg"
-                  width="20"
-                  height="20"
-                  alt="facebook"
-                />
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.x.com"
-                class="social twtr_color"
-                target="_blank"
-              >
-                <img
-                  src="images/twitter.svg"
-                  width="20"
-                  height="17"
-                  alt="twitter"
-                />
-              </a>
-            </li>
-          </ul>
+            <ul class="social-list">
+              <li>
+                <a
+                  href="https://www.instagram.com"
+                  class="social inst_color"
+                  target="_blank"
+                >
+                  <img
+                    src="images/instagram.svg"
+                    width="21"
+                    height="21"
+                    alt="instagram"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.facebook.com"
+                  class="social fb_color"
+                  target="_blank"
+                >
+                  <img
+                    src="images/facebook.svg"
+                    width="20"
+                    height="20"
+                    alt="facebook"
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.x.com"
+                  class="social twtr_color"
+                  target="_blank"
+                >
+                  <img
+                    src="images/twitter.svg"
+                    width="20"
+                    height="17"
+                    alt="twitter"
+                  />
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-menu">
+            <div class="footer-col">
+              <h2 class="body-lg">Navigation</h2>
+              <ul class="footer-links">
+                <li class="footer-links-item">
+                  <a href="" class="body-md color-text-tertiary">Overview</a>
+                </li>
+                <li class="footer-links-item">
+                  <a href="" class="body-md color-text-tertiary">Explore</a>
+                </li>
+                <li class="footer-links-item">
+                  <a href="" class="body-md color-text-tertiary">Analytics</a>
+                </li>
+                <li class="footer-links-item">
+                  <a href="" class="body-md color-text-tertiary">Unit</a>
+                </li>
+                <li class="footer-links-item">
+                  <a href="" class="body-md color-text-tertiary">Payment</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h2 class="body-lg">Address</h2>
+              <ul class="footer-links">
+                <li class="footer-links-item">
+                  <a href="" class="body-md color-text-tertiary">
+                    6391 Elgin St. Celina, Delaware 10299
+                  </a>
+                </li>
+                <li class="footer-links-item">
+                  <a href="" class="body-md color-text-tertiary">
+                    3891 Ranchview Dr. Richardson, California 62639
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-col">
+              <h2 class="body-lg">Contact</h2>
+              <ul class="footer-links">
+                <li class="footer-links-item">
+                  <a
+                    href="mailto:UrbanNest@gmail.com"
+                    class="body-md color-text-tertiary"
+                  >
+                    UrbanNest@gmail.com
+                  </a>
+                </li>
+                <li class="footer-links-item">
+                  <a
+                    href="tel:+13075550133"
+                    class="body-md color-text-tertiary"
+                  >
+                    (307) 555-0133
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div>
-          <h2 class="body-lg">Navigation</h2>
-          <ul>
-            <li><a href="" class="body-md color-text-tertiary">Overview</a></li>
-            <li><a href="" class="body-md color-text-tertiary">Explore</a></li>
+        <div class="footer-bottom">
+          <p class="body-lg color-text-tertiary">Copyright MaiHome.2024</p>
+          <ul class="footer-bottom-links">
             <li>
-              <a href="" class="body-md color-text-tertiary">Analytics</a>
-            </li>
-            <li><a href="" class="body-md color-text-tertiary">Unit</a></li>
-            <li><a href="" class="body-md color-text-tertiary">Payment</a></li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="body-lg">Address</h2>
-          <ul>
-            <li>
-              <a href="" class="body-md color-text-tertiary"
-                >6391 Elgin St. Celina, Delaware 10299</a
-              >
+              <a href="" class="body-lg color-text-tertiary">Privacy Policy</a>
             </li>
             <li>
-              <a href="" class="body-md color-text-tertiary"
-                >3891 Ranchview Dr. Richardson, California 62639</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div>
-          <h2 class="body-lg">Contact</h2>
-          <ul>
-            <li>
-              <a
-                href="mailto:UrbanNest@gmail.com"
-                class="body-md color-text-tertiary"
-                >UrbanNest@gmail.com</a
-              >
-            </li>
-            <li>
-              <a href="tel:+13075550133" class="body-md color-text-tertiary"
-                >(307) 555-0133</a
-              >
+              <a href="" class="body-lg color-text-tertiary">Terms Of Use</a>
             </li>
           </ul>
         </div>
       </div>
-      <p class="body-lg color-text-tertiary">Copyright MaiHome.2022</p>
-      <ul>
-        <li>
-          <a href="" class="body-lg color-text-tertiary">Privacy Policy</a>
-        </li>
-        <li><a href="" class="body-lg color-text-tertiary">Terms Of Use</a></li>
-      </ul>
     </footer>
   </body>
 </html>
