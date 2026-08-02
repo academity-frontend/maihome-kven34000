@@ -3,6 +3,7 @@
 
   --color-white: rgb(255, 255, 255);
   --color-black: rgb(0, 0, 0);
+  --color-black-shadow: rgba(0, 0, 0, 0.1);
 
   /*text color*/
   --color-text-primary: rgb(26, 26, 26);
@@ -144,6 +145,7 @@ cite {
 
 .button-secondary:disabled {
   background-color: var(--color-button-secondary-disabled);
+  color: var(--color-text-neutral);
 }
 
 .button-header {
@@ -163,17 +165,18 @@ cite {
 
 .button-primary:disabled {
   background-color: var(--color-button-primary-disabled);
+  color: var(--color-text-neutral);
 }
 
 .tab {
   background-color: var(--color-background-surfacefill2);
   color: var(--color-text-secondary);
-  border: none;
   border-radius: 100px;
   font-size: 20px;
   line-height: 1.5;
   font-family: var(--font-default);
   padding: 13px 24px;
+  border: 1px solid var(--color-white);
 }
 
 .tab:not(.is-active):hover {
@@ -181,7 +184,7 @@ cite {
   border-color: var(--color-button-primary-default);
 }
 
-.tab:active {
+.tab:not(.is-active):active {
   color: var(--color-button-primary-pressed);
   border-color: var(--color-button-primary-pressed);
 }
@@ -327,21 +330,16 @@ cite {
 
 .slider-button:hover {
   border-color: var(--color-button-primary-hover);
-}
-
-.slider-button:hover .slider-arrow {
-  transform: translateX(100px);
-  filter: drop-shadow(-100px 0 var(--color-button-primary-hover));
+  box-shadow: 0px 4px 4px 0px var(--color-black-shadow);
+  color: var(--color-button-primary-hover);
 }
 
 .slider-button:active {
   border-color: var(--color-button-primary-pressed);
+  box-shadow: 0px 4px 4px 0px var(--color-black-shadow);
+  color: var(--color-button-primary-pressed);
 }
 
-.slider-button:active .slider-arrow {
-  filter: drop-shadow(100px 0 var(--color-button-primary-pressed));
-  transform: translateX(-100px);
-}
 .main-list {
   display: flex;
   align-items: center;
@@ -538,21 +536,6 @@ cite {
   line-height: 1;
   text-decoration: none;
   overflow: hidden;
-}
-
-.learn-more:hover .learn-arrow {
-  filter: drop-shadow(200px 0 var(--color-button-secondary-hover));
-  transform: translateX(-200px);
-}
-
-.learn-more:active .learn-arrow {
-  filter: drop-shadow(-200px 0 var(--color-white));
-  transform: translateX(200px);
-}
-
-.learn-more:disabled .learn-arrow {
-  filter: drop-shadow(0 200px var(--color-text-neutral));
-  transform: translateY(-200px);
 }
 
 .card-button {
