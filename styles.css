@@ -3,6 +3,7 @@
 
   --color-white: rgb(255, 255, 255);
   --color-black: rgb(0, 0, 0);
+  --color-black-shadow: rgba(0, 0, 0, 0.1);
 
   /*text color*/
   --color-text-primary: rgb(26, 26, 26);
@@ -113,7 +114,7 @@ cite {
 /* buttons */
 .button {
   background-color: var(--color-button-primary-default);
-  color: white;
+  color: var(--color-white);
   border: 1px solid var(--color-background-surfacefill2);
   font-size: 16px;
   line-height: 1.5;
@@ -122,6 +123,7 @@ cite {
   padding: 8px 24px;
   box-sizing: border-box;
   min-height: 43px;
+  cursor: pointer;
 }
 
 .button-secondary {
@@ -130,19 +132,61 @@ cite {
   border: 1px solid var(--color-button-secondary-border);
 }
 
+.button-secondary:hover {
+  color: var(--color-button-secondary-hover);
+  border-color: var(--color-button-secondary-hover);
+}
+
+.button-secondary:active {
+  background-color: var(--color-button-secondary-pressed);
+  border-color: var(--color-button-secondary-pressed);
+  color: var(--color-white);
+}
+
+.button-secondary:disabled {
+  background-color: var(--color-button-secondary-disabled);
+  color: var(--color-text-neutral);
+}
+
 .button-header {
   min-width: 113px;
+}
+
+.button-primary {
+}
+
+.button-primary:hover {
+  background-color: var(--color-button-primary-hover);
+}
+
+.button-primary:active {
+  background-color: var(--color-button-primary-pressed);
+}
+
+.button-primary:disabled {
+  background-color: var(--color-button-primary-disabled);
+  color: var(--color-text-neutral);
 }
 
 .tab {
   background-color: var(--color-background-surfacefill2);
   color: var(--color-text-secondary);
-  border: none;
   border-radius: 100px;
   font-size: 20px;
   line-height: 1.5;
   font-family: var(--font-default);
   padding: 13px 24px;
+  border: 1px solid var(--color-white);
+}
+
+.tab:not(.is-active):hover {
+  color: var(--color-button-primary-default);
+  border-color: var(--color-button-primary-default);
+}
+
+.tab:not(.is-active):active {
+  color: var(--color-button-primary-pressed);
+  border-color: var(--color-button-primary-pressed);
 }
 
 .is-active {
@@ -245,6 +289,14 @@ cite {
   color: var(--color-white);
 }
 
+.header-nav-link:hover {
+  color: var(--color-button-secondary-hover);
+}
+
+.header-nav-link:active {
+  color: var(--color-button-secondary-pressed);
+}
+
 .header a {
   display: flex;
   gap: 12px;
@@ -273,6 +325,19 @@ cite {
   margin-bottom: 184px;
   margin-top: 64px;
   padding: 27px 12px;
+  overflow: hidden;
+}
+
+.slider-button:hover {
+  border-color: var(--color-button-primary-hover);
+  box-shadow: 0px 4px 4px 0px var(--color-black-shadow);
+  color: var(--color-button-primary-hover);
+}
+
+.slider-button:active {
+  border-color: var(--color-button-primary-pressed);
+  box-shadow: 0px 4px 4px 0px var(--color-black-shadow);
+  color: var(--color-button-primary-pressed);
 }
 
 .main-list {
@@ -296,7 +361,9 @@ cite {
   padding: 80px 40px 48px;
   padding-inline: 40px;
 }
-
+.aboutus-left {
+  min-width: 209px;
+}
 .about-wrapper {
   display: flex;
   justify-content: space-between;
@@ -311,6 +378,7 @@ cite {
   display: flex;
   justify-content: end;
   gap: 20px;
+  max-width: 1131px;
 }
 
 .about-list {
@@ -324,6 +392,7 @@ cite {
   height: 495px;
   border-radius: 32px;
   background: url("images/interier.webp") no-repeat center / cover;
+  width: 50%;
 }
 
 .about-content {
@@ -336,8 +405,8 @@ cite {
   text-align: center;
   border-radius: 32px;
   margin-block-end: 0;
-  padding: 32px 24px 0px 24px;
-  max-width: 562px;
+  padding: 32px 24px;
+  width: 50%;
 }
 
 .cite-name {
@@ -417,7 +486,11 @@ cite {
 .recomendation-card {
   display: block;
   overflow: hidden;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: scale 0.3s ease;
+}
+
+.recomendation-card:hover {
+  scale: 103%;
 }
 
 .card-image-wrapper {
@@ -462,6 +535,7 @@ cite {
   font-family: var(--font-default);
   line-height: 1;
   text-decoration: none;
+  overflow: hidden;
 }
 
 .card-button {
@@ -532,6 +606,8 @@ cite {
 
 .feature-img {
   border-bottom: 1px solid var(--color-background-surfacestroke);
+  width: 100%;
+  height: auto;
 }
 
 .features-list {
@@ -613,6 +689,55 @@ cite {
   width: 56px;
   height: 56px;
   flex-shrink: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.summ-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+  mask-image: url("images/plusicon.svg");
+  -webkit-mask-image: url("images/plusicon.svg");
+  mask-size: 24px 24px;
+  -webkit-mask-size: 24px 24px;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+  transition: transform 0.3s ease;
+  background-color: var(--color-text-primary);
+}
+
+.details[open] .summ-icon {
+  mask-image: url("images/minusicon.svg");
+  -webkit-mask-image: url("images/minusicon.svg");
+  background-color: var(--color-white);
+}
+
+.details[open] .faq-button {
+  background-color: var(--color-button-primary-default);
+  border-color: var(--color-white);
+}
+
+.details[open] .faq-button:hover {
+  background-color: var(--color-button-primary-hover);
+}
+
+.details[open] .faq-button:active {
+  background-color: var(--color-button-primary-pressed);
+}
+
+.details:not([open]) .faq-button:hover .summ-icon {
+  background-color: var(--color-button-secondary-hover);
+}
+
+.details[open] .faq-button:hover .summ-icon {
+  background-color: var(--color-white);
+}
+
+.faq-button:active .summ-icon {
+  background-color: var(--color-white);
 }
 
 .faq-answer {
@@ -631,7 +756,6 @@ cite {
     ),
     url("images/interier.webp") no-repeat center / cover;
   background-color: var(--color-background-secondary);
-  max-width: 1440px;
   height: 607px;
   margin: 0 auto;
   display: flex;
@@ -759,7 +883,7 @@ cite {
   gap: 24px;
 }
 
-.footer-menu h2 {
+.footer-title {
   padding-bottom: 24px;
 }
 
@@ -767,6 +891,10 @@ cite {
   margin-bottom: 16px;
   letter-spacing: 0%;
   line-height: 18px;
+}
+
+.footer-links-style:hover {
+  color: var(--color-black);
 }
 
 .footer-links-item:last-child {

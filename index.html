@@ -35,7 +35,9 @@
         <button type="button" class="button button-secondary button-header">
           Register
         </button>
-        <button type="button" class="button button-header">Login</button>
+        <button type="button" class="button button-header button-primary">
+          Login
+        </button>
       </div>
     </header>
     <main>
@@ -49,12 +51,19 @@
             premier listings available for browsing today.
           </p>
           <a href="" class="slider-button">
-            <img
-              src="images/downarrow.svg"
+            <svg
+              class="slider-arrow"
               width="24"
               height="24"
-              alt="arrow icon"
-            />
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.9999 5C10.9999 4.44772 11.4476 4 11.9999 4C12.5522 4 12.9999 4.44772 12.9999 5V16.5859L18.2929 11.293C18.6834 10.9024 19.3164 10.9024 19.707 11.293C20.0975 11.6835 20.0975 12.3165 19.707 12.707L12.707 19.707C12.3164 20.0976 11.6834 20.0976 11.2929 19.707L4.29289 12.707C3.90237 12.3165 3.90237 11.6835 4.29289 11.293C4.68342 10.9024 5.31643 10.9024 5.70696 11.293L10.9999 16.5859V5Z"
+                fill="currentColor"
+              />
+            </svg>
           </a>
           <ul class="main-list">
             <li class="color-text-quaternary">
@@ -71,7 +80,7 @@
       </section>
       <section id="about_us" class="about">
         <div class="content-wrapper about-wrapper">
-          <h2 class="headline-md color-text-primary">About Us</h2>
+          <h2 class="headline-md color-text-primary aboutus-left">About Us</h2>
           <div class="about-right-column">
             <div class="about-text-wrapper">
               <div class="about-content">
@@ -220,7 +229,7 @@
                       height="206"
                       alt="Dreamland Estates"
                     />
-                    <div class="card-button">
+                    <div class="card-button button-primary">
                       <img
                         src="images/arrowupright.svg"
                         width="24"
@@ -274,7 +283,7 @@
                       height="206"
                       alt="Visionary Vistas"
                     />
-                    <div class="card-button">
+                    <div class="card-button button-primary">
                       <img
                         src="images/arrowupright.svg"
                         width="24"
@@ -328,7 +337,7 @@
                       height="206"
                       alt="Tranquil Haven Homes"
                     />
-                    <div class="card-button">
+                    <div class="card-button button-primary">
                       <img
                         src="images/arrowupright.svg"
                         width="24"
@@ -382,7 +391,7 @@
                       height="206"
                       alt="Meadow Brook Estates"
                     />
-                    <div class="card-button">
+                    <div class="card-button button-primary">
                       <img
                         src="images/arrowupright.svg"
                         width="24"
@@ -436,7 +445,7 @@
                       height="206"
                       alt="Aspen Ridge Estates"
                     />
-                    <div class="card-button">
+                    <div class="card-button button-primary">
                       <img
                         src="images/arrowupright.svg"
                         width="24"
@@ -490,7 +499,7 @@
                       height="206"
                       alt="Harmony Hills Realty"
                     />
-                    <div class="card-button">
+                    <div class="card-button button-primary">
                       <img
                         src="images/arrowupright.svg"
                         width="24"
@@ -534,14 +543,20 @@
               </article>
             </li>
           </ul>
-          <a href="" class="learn-more button">
+          <a href="" class="learn-more button button-secondary">
             Learn more
-            <img
-              src="images/arrowupblack.svg"
-              width="14"
-              height="14"
-              alt="learn more arrow"
-            />
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18.748 6.00024V15.7502C18.748 15.9492 18.669 16.1399 18.5283 16.2806C18.3877 16.4212 18.1969 16.5002 17.998 16.5002C17.7991 16.5002 17.6083 16.4212 17.4676 16.2806C17.327 16.1399 17.248 15.9492 17.248 15.7502V7.81056L6.5286 18.5309C6.38787 18.6716 6.197 18.7507 5.99798 18.7507C5.79895 18.7507 5.60808 18.6716 5.46735 18.5309C5.32662 18.3901 5.24756 18.1993 5.24756 18.0002C5.24756 17.8012 5.32662 17.6103 5.46735 17.4696L16.1877 6.75024H8.24798C8.04906 6.75024 7.8583 6.67123 7.71765 6.53057C7.57699 6.38992 7.49798 6.19916 7.49798 6.00024C7.49798 5.80133 7.57699 5.61057 7.71765 5.46991C7.8583 5.32926 8.04906 5.25024 8.24798 5.25024H17.998C18.1969 5.25024 18.3877 5.32926 18.5283 5.46991C18.669 5.61057 18.748 5.80133 18.748 6.00024Z"
+                fill="currentColor"
+              />
+            </svg>
           </a>
         </div>
       </section>
@@ -646,12 +661,7 @@
             <summary class="summary headline-lg">
               How do I start the home buying process?
               <span class="button button-secondary faq-button">
-                <img
-                  src="images/plusicon.svg"
-                  width="24"
-                  height="24"
-                  alt="plus open icon"
-                />
+                <span class="summ-icon"></span>
               </span>
             </summary>
             <p class="body-lg color-text-tertiary faq-answer">
@@ -664,12 +674,7 @@
             <summary class="summary headline-lg">
               What factors should I consider when choosing a neighborhood?
               <span class="button button-secondary faq-button">
-                <img
-                  src="images/plusicon.svg"
-                  width="24"
-                  height="24"
-                  alt="plus open icon"
-                />
+                <span class="summ-icon"></span>
               </span>
             </summary>
             <p class="body-lg color-text-tertiary faq-answer">
@@ -680,12 +685,7 @@
             <summary class="summary headline-lg">
               How can I determine the value of my property?
               <span class="button button-secondary faq-button">
-                <img
-                  src="images/plusicon.svg"
-                  width="24"
-                  height="24"
-                  alt="plus open icon"
-                />
+                <span class="summ-icon"></span>
               </span>
             </summary>
             <p class="body-lg color-text-tertiary faq-answer">
@@ -696,12 +696,7 @@
             <summary class="summary headline-lg">
               What steps are involved in selling a home?
               <span class="button button-secondary faq-button">
-                <img
-                  src="images/plusicon.svg"
-                  width="24"
-                  height="24"
-                  alt="plus open icon"
-                />
+                <span class="summ-icon"></span>
               </span>
             </summary>
             <p class="body-lg color-text-tertiary faq-answer">
@@ -712,12 +707,7 @@
             <summary class="summary headline-lg">
               How can I improve my credit score before applying for a mortgage?
               <span class="button button-secondary faq-button">
-                <img
-                  src="images/plusicon.svg"
-                  width="24"
-                  height="24"
-                  alt="plus open icon"
-                />
+                <span class="summ-icon"></span>
               </span>
             </summary>
             <p class="body-lg color-text-tertiary faq-answer">
@@ -816,47 +806,73 @@
           </div>
           <div class="footer-menu">
             <div class="footer-col">
-              <h2 class="body-lg">Navigation</h2>
+              <h2 class="body-lg footer-title">Navigation</h2>
               <ul class="footer-links">
                 <li class="footer-links-item">
-                  <a href="" class="body-md color-text-tertiary">Overview</a>
+                  <a
+                    href=""
+                    class="body-md color-text-tertiary footer-links-style"
+                    >Overview</a
+                  >
                 </li>
                 <li class="footer-links-item">
-                  <a href="" class="body-md color-text-tertiary">Explore</a>
+                  <a
+                    href=""
+                    class="body-md color-text-tertiary footer-links-style"
+                    >Explore</a
+                  >
                 </li>
                 <li class="footer-links-item">
-                  <a href="" class="body-md color-text-tertiary">Analytics</a>
+                  <a
+                    href=""
+                    class="body-md color-text-tertiary footer-links-style"
+                    >Analytics</a
+                  >
                 </li>
                 <li class="footer-links-item">
-                  <a href="" class="body-md color-text-tertiary">Unit</a>
+                  <a
+                    href=""
+                    class="body-md color-text-tertiary footer-links-style"
+                    >Unit</a
+                  >
                 </li>
                 <li class="footer-links-item">
-                  <a href="" class="body-md color-text-tertiary">Payment</a>
+                  <a
+                    href=""
+                    class="body-md color-text-tertiary footer-links-style"
+                    >Payment</a
+                  >
                 </li>
               </ul>
             </div>
             <div class="footer-col">
-              <h2 class="body-lg">Address</h2>
+              <h2 class="body-lg footer-title">Address</h2>
               <ul class="footer-links">
                 <li class="footer-links-item">
-                  <a href="" class="body-md color-text-tertiary">
+                  <a
+                    href=""
+                    class="body-md color-text-tertiary footer-links-style"
+                  >
                     6391 Elgin St. Celina, Delaware 10299
                   </a>
                 </li>
                 <li class="footer-links-item">
-                  <a href="" class="body-md color-text-tertiary">
+                  <a
+                    href=""
+                    class="body-md color-text-tertiary footer-links-style"
+                  >
                     3891 Ranchview Dr. Richardson, California 62639
                   </a>
                 </li>
               </ul>
             </div>
             <div class="footer-col">
-              <h2 class="body-lg">Contact</h2>
+              <h2 class="body-lg footer-title">Contact</h2>
               <ul class="footer-links">
                 <li class="footer-links-item">
                   <a
                     href="mailto:UrbanNest@gmail.com"
-                    class="body-md color-text-tertiary"
+                    class="body-md color-text-tertiary footer-links-style"
                   >
                     UrbanNest@gmail.com
                   </a>
@@ -864,7 +880,7 @@
                 <li class="footer-links-item">
                   <a
                     href="tel:+13075550133"
-                    class="body-md color-text-tertiary"
+                    class="body-md color-text-tertiary footer-links-style"
                   >
                     (307) 555-0133
                   </a>
@@ -877,10 +893,14 @@
           <p class="body-lg color-text-tertiary">Copyright MaiHome.2024</p>
           <ul class="footer-bottom-links">
             <li>
-              <a href="" class="body-lg color-text-tertiary">Privacy Policy</a>
+              <a href="" class="body-lg color-text-tertiary footer-links-style"
+                >Privacy Policy</a
+              >
             </li>
             <li>
-              <a href="" class="body-lg color-text-tertiary">Terms Of Use</a>
+              <a href="" class="body-lg color-text-tertiary footer-links-style"
+                >Terms Of Use</a
+              >
             </li>
           </ul>
         </div>
