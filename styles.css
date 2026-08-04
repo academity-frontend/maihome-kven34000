@@ -152,8 +152,6 @@ cite {
   min-width: 113px;
 }
 
-.button-primary {
-}
 
 .button-primary:hover {
   background-color: var(--color-button-primary-hover);
@@ -751,12 +749,11 @@ cite {
 .contact {
   background: linear-gradient(
       to left,
-      rgba(59, 109, 255, 0.65),
-      rgba(0, 0, 0, 0.95)
+      rgba(59, 109, 255, 0.65)0%,
+      rgba(0, 0, 0, 0.95)72.22%
     ),
     url("images/interier.webp") no-repeat center / cover;
   background-color: var(--color-background-secondary);
-  height: 607px;
   margin: 0 auto;
   display: flex;
   align-items: stretch;
@@ -768,7 +765,7 @@ cite {
   grid-template-columns: 595px 1fr;
   height: 100%;
   position: relative;
-  padding-left: 40px;
+  padding-left: 80px;
 }
 
 .contact-info {
@@ -779,6 +776,7 @@ cite {
   align-self: center;
   position: relative;
   z-index: 2;
+  margin: 54px 0;
 }
 
 .contact-image-box {
@@ -799,6 +797,146 @@ cite {
   bottom: 0;
   z-index: 1;
 }
+
+.contact-input {
+  max-width: 365px;
+  height: 50px;
+  padding: 16px;
+  background-color: var(--color-white);
+  border: 2px solid var(--color-background-surfacestroke);
+  border-radius: 16px;
+  font-family: var(--font-default);
+  font-size: 16px;
+  line-height: 1.125;
+  color: var(--color-text-primary);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.contact-input::placeholder {
+  color: var(--color-text-tertiary);
+  font-size: 16px;
+  line-height: 1.125;
+}
+
+.contact-input:focus {
+  border-color: var(--color-button-primary-hover);
+}
+
+.input-wrapper{
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+  gap:16px;
+}
+
+.contact-checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.contact-checkbox {
+  position: absolute;
+  appearance: none;
+  -webkit-appearance: none;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.checkbox-custom {
+  width: 32px;
+  height: 32px;
+  border: 2px solid var(--color-text-tertiary);
+  border-radius: 8px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checkbox-custom::after {
+  content: "";
+  width: 12px;
+  height: 10px;
+  background-image: url("images/checkmark.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transform: scale(0);
+}
+
+.contact-checkbox:checked + .checkbox-custom::after {
+  transform: scale(1);
+}
+
+.checkbox-custom:hover {
+  border-color: var(--color-button-primary-default);
+}
+.checkbox-custom:disabled {
+  border-color: var(--color-text-neutral);
+}
+
+.contact-checkbox:checked + .checkbox-custom {
+  background-color: var(--color-button-primary-default);
+  border-color: var(--color-button-primary-default);
+}
+
+.contact-checkbox:focus-visible + .checkbox-custom {
+  box-shadow: 0 0 0 2px var(--color-button-primary-hover);
+}
+
+.terms-link {
+  text-decoration: underline;
+  color: var(--color-text-neutral);
+}
+
+.terms-text{
+  color: var(--color-text-neutral);
+}
+
+.terms-link:hover {
+  color: var(--color-button-primary-hover);
+}
+
+.terms-link:active {
+  color: var(--color-button-primary-pressed);
+}
+
+.contact-submit {
+  max-width: 365px;
+  height: 56px;
+  border-radius: 1000px;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 16px;
+}
+
+.contact-field-wrap {
+  position: relative;
+  width: 100%;
+}
+
+.error-message {
+  display: none;
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  font-size: 12px;
+  color: var(--color-functional-red);
+  z-index: 2;
+}
+
+.contact-input:user-invalid {
+  border-color: var(--color-functional-red)
+}
+
+.contact-checkbox:user-invalid + .checkbox-custom {
+  border-color: var(--color-functional-red);
+}
+
 
 /*footer*/
 .footer {
