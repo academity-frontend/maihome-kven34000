@@ -429,15 +429,22 @@ cite {
 .solution-card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 40px;
+  gap: 41px;
 }
 
 .solution-list-item {
-  padding: 20px 32px 32px;
-  &:not(:last-child) {
-    border-right: 1px solid var(--color-text-neutral);
-    padding-right: 52px;
-  }
+  padding: 32px;
+  position: relative;
+}
+
+.solution-list-item:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  bottom: 0px;
+  right: -20px;
+  width: 1px;
+  background-color: #e6e6e6;
 }
 
 .solution-card-head {
@@ -760,6 +767,7 @@ cite {
 
 .contact-text {
   margin: 16px 0;
+  z-index: 2;
 }
 
 .contact-container {
@@ -767,7 +775,11 @@ cite {
   grid-template-columns: 595px 1fr;
   height: 100%;
   position: relative;
-  padding-left: 40px;
+  padding-left: 80px;
+  max-width: 1440px;
+  width: 100%;
+  margin-inline: auto;
+  box-sizing: border-box;
 }
 
 .contact-info {
@@ -777,13 +789,21 @@ cite {
   max-width: 595px;
   align-self: center;
   position: relative;
-  z-index: 2;
 }
 
 .contact-image {
   position: absolute;
+  left: 50%;
+  transform: translateX(-18%);
+}
+
+.contact-image-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   bottom: -54px;
-  right: -45px;
+  overflow: hidden;
   z-index: 1;
 }
 
@@ -864,7 +884,8 @@ cite {
 .checkbox-custom:hover {
   border-color: var(--color-button-primary-default);
 }
-.checkbox-custom:disabled {
+
+.contact-checkbox:disabled + .checkbox-custom {
   border-color: var(--color-text-neutral);
 }
 
@@ -953,6 +974,7 @@ cite {
 
 .inst_color:hover {
   box-shadow: 0px 4px 4px 0px var(--color-black-shadow);
+  opacity: 80%;
 }
 
 .fb_color {
@@ -961,6 +983,7 @@ cite {
 
 .fb_color:hover {
   box-shadow: 0px 4px 4px 0px var(--color-black-shadow);
+  opacity: 80%;
 }
 
 .twtr_color {
@@ -969,6 +992,7 @@ cite {
 
 .twtr_color:hover {
   box-shadow: 0px 4px 4px 0px var(--color-black-shadow);
+  opacity: 80%;
 }
 
 .footer-container {
