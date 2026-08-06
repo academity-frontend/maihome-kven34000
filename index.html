@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <header class="header header-content content-wrapper-narrow">
+    <header class="header content-wrapper-narrow">
       <a href="#main">
         <img src="images/logo.svg" width="28" height="28" alt="Logo white" />
         <p class="header-logo">
@@ -82,24 +82,22 @@
         <div class="content-wrapper about-wrapper">
           <h2 class="headline-md color-text-primary aboutus-left">About Us</h2>
           <div class="about-right-column">
-            <div class="about-text-wrapper">
-              <div class="about-content">
-                <p class="headline-lg color-text-tertiary">
-                  Welcome to <span class="highlight">Mai Home</span>, your
-                  premier destination for real estate solutions:
-                </p>
-                <ul class="about-list">
-                  <li class="headline-lg color-text-tertiary">
-                    Your top choice for excellence in real estate solutions;
-                  </li>
-                  <li class="headline-lg color-text-tertiary">
-                    Passionately connecting people with their ideal homes;
-                  </li>
-                  <li class="headline-lg color-text-tertiary">
-                    A beacon of industry trust and professional integrity.
-                  </li>
-                </ul>
-              </div>
+            <div class="about-content">
+              <p class="headline-lg color-text-tertiary">
+                Welcome to <span class="highlight">Mai Home</span>, your premier
+                destination for real estate solutions:
+              </p>
+              <ul class="about-list">
+                <li class="headline-lg color-text-tertiary">
+                  Your top choice for excellence in real estate solutions;
+                </li>
+                <li class="headline-lg color-text-tertiary">
+                  Passionately connecting people with their ideal homes;
+                </li>
+                <li class="headline-lg color-text-tertiary">
+                  A beacon of industry trust and professional integrity.
+                </li>
+              </ul>
             </div>
             <div class="about-block-wrapper">
               <div class="about-img"></div>
@@ -717,22 +715,66 @@
         </div>
       </section>
       <section id="contact" class="contact">
-        <div class="content-wrapper contact-grid">
-          <div class="contact-info">
+        <div class="contact-container">
+          <div>
             <h2 class="subtitle-sm color-text-quaternary">
               Start Your Real Estate Journey Here
             </h2>
-            <p class="body-lg color-text-quaternary">
+            <p class="body-lg color-text-quaternary contact-text">
               Embark on your real estate journey today. Explore our listings and
               find the perfect property to call home.
             </p>
+            <form class="contact-info" action="#" method="POST">
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your name"
+                  class="contact-input"
+                  required
+                  pattern="^[А-Яа-яЁёA-Za-z\s\-]+$"
+                  minlength="2"
+                  maxlength="100"
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Phone"
+                  class="contact-input"
+                  required
+                  pattern="^[0-9]+$"
+                  minlength="7"
+                  maxlength="15"
+                />
+              </div>
+              <label class="contact-checkbox-label">
+                <input
+                  type="checkbox"
+                  name="terms"
+                  class="contact-checkbox"
+                  required
+                />
+                <span class="checkbox-custom"></span>
+                <span class="body-md terms-text">
+                  I hereby agree to the
+                  <a href="#" class="terms-link"> Terms and Conditions*</a>
+                </span>
+              </label>
+              <button
+                type="submit"
+                class="button button-primary contact-submit"
+              >
+                Submit
+              </button>
+            </form>
           </div>
           <div class="contact-image-box">
             <img
               src="images/smiling_guy.webp"
-              width="898"
+              width="1001"
               height="563"
               alt="smyling guy"
+              class="contact-image"
             />
           </div>
         </div>
@@ -740,7 +782,7 @@
     </main>
     <footer id="footer" class="footer">
       <div class="content-wrapper">
-        <div class="footer-grid">
+        <div class="footer-container">
           <div class="footer-col footer-info">
             <a href="" class="footer-logo-link">
               <img
