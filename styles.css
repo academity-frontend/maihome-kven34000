@@ -440,8 +440,7 @@ cite {
 .solution-list-item:not(:last-child)::after {
   content: "";
   position: absolute;
-  height: 100%;
-  bottom: 0px;
+  inset-block: 0;
   right: -20px;
   width: 1px;
   background-color: #e6e6e6;
@@ -799,12 +798,10 @@ cite {
 
 .contact-image-box {
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: -54px;
+  inset: 0 0 -54px;
   overflow: hidden;
   z-index: 1;
+  pointer-events: none;
 }
 
 .contact-input {
@@ -974,7 +971,7 @@ cite {
 
 .inst_color:hover {
   box-shadow: 0px 4px 4px 0px var(--color-black-shadow);
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .fb_color {
@@ -983,7 +980,7 @@ cite {
 
 .fb_color:hover {
   box-shadow: 0px 4px 4px 0px var(--color-black-shadow);
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .twtr_color {
@@ -992,7 +989,7 @@ cite {
 
 .twtr_color:hover {
   box-shadow: 0px 4px 4px 0px var(--color-black-shadow);
-  opacity: 80%;
+  opacity: 0.8;
 }
 
 .footer-container {
