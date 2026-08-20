@@ -310,7 +310,11 @@ cite {
 
 @media (max-width: 900px) {
   .header {
-    padding: 8px 16px;
+    padding: 8px 8px 8px 16px;
+  }
+
+  body:has(#menu-toggle:checked) .header {
+    position: fixed;
   }
 
   .header-logo {
@@ -352,14 +356,14 @@ cite {
   display: none;
 }
 
-.burger .icon-close {
+.icon-close {
   display: none;
 }
 
 .burger {
   background-color: transparent;
   border: none;
-  padding: 0 16px 0 0;
+  padding-right: 16px;
   cursor: pointer;
   display: none;
   align-items: center;
@@ -373,6 +377,18 @@ cite {
   display: block;
 }
 
+@media (max-width: 1024px) {
+  .header-links-list {
+    gap: 28px;
+  }
+}
+
+@media (max-width: 970px) {
+  .header-links-list {
+    gap: 15px;
+  }
+}
+
 @media (max-width: 900px) {
   .burger {
     display: flex;
@@ -382,8 +398,7 @@ cite {
     display: none;
     position: absolute;
     top: calc(100% + 12px);
-    left: 0;
-    right: 0;
+    inset-inline: 0;
     background-color: var(--color-background-surfacefill2);
     border-radius: 24px;
     padding: 32px 24px;
@@ -411,12 +426,6 @@ cite {
     background-color: var(--color-black);
     opacity: 50%;
     z-index: 4;
-  }
-}
-
-@media (max-width: 1024px) {
-  .header-links-list {
-    gap: 15px;
   }
 }
 
@@ -474,6 +483,9 @@ cite {
   .main-list {
     gap: 68px;
   }
+  .slider-button {
+    margin: 84px;
+  }
 }
 
 .main-results {
@@ -483,6 +495,9 @@ cite {
 @media (max-width: 900px) {
   .main-results-text {
     font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -507,17 +522,26 @@ cite {
 
 @media (max-width: 900px) {
   .about {
-    padding: 28px 24px;
+    padding: 48px 24px;
   }
 }
 
-.aboutus-left {
+.about-left {
   min-width: 229px;
 }
 
+@media (max-width: 1024px) {
+  .about-left {
+    width: 209px;
+    min-width: 209px;
+    flex-shrink: 0;
+  }
+}
+
 @media (max-width: 900px) {
-  .aboutus-left {
+  .about-left {
     min-width: 0;
+    width: 100%;
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
@@ -549,7 +573,9 @@ cite {
 
 @media (max-width: 1024px) {
   .about-block-wrapper {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    max-width: 735px;
   }
 }
 
@@ -561,7 +587,7 @@ cite {
 
 @media (max-width: 1024px) {
   .about-list {
-    margin-top: 16px;
+    margin-top: 20px;
     padding-left: 24px;
   }
 }
@@ -577,13 +603,18 @@ cite {
 @media (max-width: 1024px) {
   .about-img {
     width: 100%;
+    min-height: 647px;
   }
 }
 
 @media (max-width: 900px) {
   .about-img {
-    margin-bottom: 20px;
+    min-height: 0;
     max-height: 303px;
+    background-size: 280%;
+  }
+  .about-list {
+    margin-top: 16px;
   }
 }
 
@@ -594,14 +625,14 @@ cite {
 @media (max-width: 1024px) {
   .about-text {
     font-size: 24px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
   }
 }
 
 @media (max-width: 900px) {
   .about-text {
     font-size: 20px;
-    letter-spacing: 0%;
+    letter-spacing: 0;
   }
 }
 @media (max-width: 900px) {
@@ -648,7 +679,6 @@ cite {
   line-height: 1;
   color: var(--color-text-secondary);
   max-width: 808px;
-  font-weight: 500;
 }
 
 .solution-card-container {
@@ -675,6 +705,15 @@ cite {
   padding: 52px 0px 12px;
 }
 
+@media (max-width: 1024px) {
+  .solution {
+    padding: 124px 40px 64px;
+  }
+
+  .solution-text {
+    font-weight: 500;
+  }
+}
 @media (max-width: 900px) {
   .solution {
     padding: 48px 24px;
@@ -683,11 +722,12 @@ cite {
   .solution-text {
     line-height: 1.5;
     margin-block: 20px 48px;
+    font-weight: 400;
   }
 
   .solution-card-container {
-    grid-template-columns: 1fr !important;
-    gap: 0px;
+    grid-template-columns: 1fr;
+    gap: 0;
   }
 
   .solution-list-item:not(:last-child)::after {
@@ -746,6 +786,11 @@ cite {
 @media (max-width: 1024px) {
   .recomendation-list {
     grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+  }
+
+  .recomendation {
+    padding: 24px 40px 84px;
   }
 }
 
@@ -804,6 +849,10 @@ cite {
 @media (max-width: 1024px) {
   .learn-more {
     width: 100%;
+  }
+
+  .card-image-wrapper {
+    aspect-ratio: 462 / 206;
   }
 }
 
@@ -875,8 +924,9 @@ cite {
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 16px;
+    padding: 15px;
     font-size: 20px;
+    line-height: 1;
   }
 
   .recomendation-list {
@@ -889,6 +939,9 @@ cite {
 
   .learn-more {
     margin-top: 24px;
+  }
+  .card-image-wrapper {
+    aspect-ratio: 344 / 206;
   }
 }
 
@@ -1002,7 +1055,7 @@ cite {
 }
 
 @media (max-width: 1024px) {
-  .feature-article picture {
+  .feature-picture {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1022,12 +1075,13 @@ cite {
   }
   .features-list {
     grid-template-columns: 1fr;
-    column-gap: 0px;
+    column-gap: 0;
   }
   .feature-card-wrapper {
     padding: 30px 24px;
   }
-  .feature-article picture {
+
+  .feature-picture {
     height: 200px;
   }
 
@@ -1036,9 +1090,13 @@ cite {
     overflow: hidden;
     text-overflow: ellipsis;
     width: 100%;
+    font-size: 16px;
   }
   .big-card-wrapper {
     margin-top: 0;
+  }
+  .feature-card-headline {
+    font-size: 20px;
   }
 }
 
@@ -1074,7 +1132,7 @@ cite {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 28px 24px;
+  padding: 24px;
   cursor: pointer;
 }
 
@@ -1137,7 +1195,7 @@ cite {
 }
 
 .faq-answer {
-  padding: 0 32px 32px;
+  padding: 0 24px 24px;
   max-width: 776px;
   line-height: 1.6;
   box-sizing: content-box;
@@ -1174,7 +1232,7 @@ cite {
     ),
     url("images/interier.webp") no-repeat center / cover;
   background-color: var(--color-background-secondary);
-  margin: 0 auto;
+  margin-inline: auto;
   display: flex;
   align-items: stretch;
   box-sizing: border-box;
@@ -1219,7 +1277,7 @@ cite {
   position: absolute;
   left: 50%;
   transform: translateX(-18%);
-  bottom: 0px;
+  bottom: 0;
 }
 
 .contact-image-box {
@@ -1387,7 +1445,12 @@ cite {
   .contact-text {
     font-size: 16px;
     line-height: 1.125;
-    letter-spacing: 0px;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 1024px) {
+  .form-container {
+    max-width: 451px;
   }
 }
 
@@ -1449,7 +1512,7 @@ cite {
 
 @media (max-width: 1024px) {
   .footer-container {
-    gap: 0px;
+    gap: 0;
   }
 }
 
@@ -1526,7 +1589,7 @@ cite {
 }
 
 .footer-links-item {
-  letter-spacing: 0%;
+  letter-spacing: 0;
   line-height: 18px;
 }
 
