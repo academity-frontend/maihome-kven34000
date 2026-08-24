@@ -61,6 +61,12 @@ body {
   background-color: var(--color-text-tertiary);
 }
 
+@media (max-width: 900px) {
+  body:has(#menu-toggle:checked) {
+    overflow: hidden;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -616,6 +622,9 @@ cite {
   .about-list {
     margin-top: 16px;
   }
+  .about-block-wrapper {
+    margin-inline: auto;
+  }
 }
 
 .about-content {
@@ -1063,6 +1072,11 @@ cite {
     flex-shrink: 0;
     width: 100%;
     overflow: hidden;
+    background: radial-gradient(
+      81.91% 81.95% at 48.21% 50.17%,
+      rgba(250, 250, 250, 0) 0%,
+      #fafafa 100%
+    );
   }
   .big-card-wrapper {
     margin-top: 19px;
@@ -1083,6 +1097,11 @@ cite {
 
   .feature-picture {
     height: 200px;
+    background: radial-gradient(
+      81.91% 81.95% at 48.21% 50.17%,
+      rgba(250, 250, 250, 0) 0%,
+      #fafafa 100%
+    );
   }
 
   .feature-card-text {
@@ -1345,7 +1364,7 @@ cite {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex: none;
+  flex-shrink: 0;
 }
 
 .checkbox-custom::after {
