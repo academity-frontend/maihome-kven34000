@@ -15,22 +15,57 @@
   </head>
   <body>
     <header class="header content-wrapper-narrow">
-      <a href="#main">
+      <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+      <label for="menu-toggle" class="burger">
+        <svg
+          class="icon-burger"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M20 18H4M20 12H4M20 6H4"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+          ></path>
+        </svg>
+        <svg
+          class="icon-close"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M18 6L6 18M6 6L18 18"
+            stroke="white"
+            stroke-width="2"
+            stroke-linecap="round"
+          ></path>
+        </svg>
+      </label>
+      <a href="#main" class="logo-picture">
         <img src="images/logo.svg" width="28" height="28" alt="Logo white" />
         <p class="header-logo">
           Mai
           <span class="text-heavy">Home</span>
         </p>
       </a>
-      <nav>
-        <ul class="header-links-list">
-          <li><a href="#about_us" class="header-nav-link">About us</a></li>
-          <li><a href="#solution" class="header-nav-link">Solutions</a></li>
-          <li><a href="#features" class="header-nav-link">Features</a></li>
-          <li><a href="#faq" class="header-nav-link">FAQ</a></li>
-          <li><a href="#contact" class="header-nav-link">Contact Us</a></li>
-        </ul>
-      </nav>
+      <div class="header-menu-dropdown">
+        <nav>
+          <ul class="header-links-list">
+            <li><a href="#about_us" class="header-nav-link">About us</a></li>
+            <li><a href="#solution" class="header-nav-link">Solutions</a></li>
+            <li><a href="#features" class="header-nav-link">Features</a></li>
+            <li><a href="#faq" class="header-nav-link">FAQ</a></li>
+            <li><a href="#contact" class="header-nav-link">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="header-button">
         <button type="button" class="button button-secondary button-header">
           Register
@@ -66,13 +101,13 @@
             </svg>
           </a>
           <ul class="main-list">
-            <li class="color-text-quaternary">
+            <li class="color-text-quaternary main-results-text">
               <span class="subtitle-md main-results">432</span> Partners
             </li>
-            <li class="color-text-quaternary">
+            <li class="color-text-quaternary main-results-text">
               <span class="subtitle-md main-results">12.6K</span> Properties
             </li>
-            <li class="color-text-quaternary">
+            <li class="color-text-quaternary main-results-text">
               <span class="subtitle-md main-results">80k</span> Customers
             </li>
           </ul>
@@ -80,21 +115,23 @@
       </section>
       <section id="about_us" class="about">
         <div class="content-wrapper about-wrapper">
-          <h2 class="headline-md color-text-primary aboutus-left">About Us</h2>
+          <h2 class="headline-md color-text-primary about-left">About Us</h2>
           <div class="about-right-column">
             <div class="about-content">
-              <p class="headline-lg color-text-tertiary">
+              <p
+                class="headline-lg color-text-tertiary about-text about-text-subhead"
+              >
                 Welcome to <span class="highlight">Mai Home</span>, your premier
                 destination for real estate solutions:
               </p>
               <ul class="about-list">
-                <li class="headline-lg color-text-tertiary">
+                <li class="headline-lg color-text-tertiary about-text">
                   Your top choice for excellence in real estate solutions;
                 </li>
-                <li class="headline-lg color-text-tertiary">
+                <li class="headline-lg color-text-tertiary about-text">
                   Passionately connecting people with their ideal homes;
                 </li>
-                <li class="headline-lg color-text-tertiary">
+                <li class="headline-lg color-text-tertiary about-text">
                   A beacon of industry trust and professional integrity.
                 </li>
               </ul>
@@ -109,14 +146,13 @@
                   home. I highly recommend their services to anyone seeking a
                   seamless real estate experience."
                 </p>
-                <div class="cite-picture">
-                  <img
-                    src="images/codyfisher.webp"
-                    width="64"
-                    height="64"
-                    alt="Cody Fisher miniature"
-                  />
-                </div>
+                <img
+                  class="cite-picture"
+                  src="images/codyfisher.webp"
+                  width="64"
+                  height="64"
+                  alt="Cody Fisher miniature"
+                />
                 <cite class="cite-description">
                   <span class="headline-sm color-text-primary cite-name"
                     >Cody Fisher</span
@@ -198,6 +234,24 @@
               property match and make informed decisions effortlessly
             </p>
           </div>
+          <button type="button" class="filter button button-secondary">
+            Filter
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M6.46154 12H17.5385M4 7H20M10.1538 17H13.8462"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
           <ul class="recomendation-tab">
             <li>
               <button type="button" class="tab button is-active">
@@ -571,18 +625,28 @@
           <ul class="features-list">
             <li class="feature-card-small">
               <article class="feature-article">
-                <img
-                  class="feature-img"
-                  src="images/feature_instant.webp"
-                  width="533"
-                  height="302"
-                  alt="Instant process example"
-                />
+                <picture class="feature-picture">
+                  <source
+                    srcset="images/instant_mob.webp"
+                    media="(max-width: 392px)"
+                  />
+                  <source
+                    srcset="images/instant_tablet.webp"
+                    media="(max-width: 1024px)"
+                  />
+                  <img
+                    class="feature-img"
+                    src="images/feature_instant.webp"
+                    width="533"
+                    height="302"
+                    alt="Instant process example"
+                  />
+                </picture>
                 <div class="feature-card-wrapper">
-                  <h3 class="headline-md">
+                  <h3 class="headline-md feature-card-headline">
                     Instant process to get house dream
                   </h3>
-                  <p class="body-lg color-text-tertiary">
+                  <p class="body-lg color-text-tertiary feature-card-text">
                     FramerAuth validates user's access rights to tiered plans
                     ensuring a seamless user experience
                   </p>
@@ -591,16 +655,28 @@
             </li>
             <li class="feature-card-big">
               <article class="feature-article">
-                <img
-                  class="feature-img"
-                  src="images/feature_discount.webp"
-                  alt="Discount example"
-                  width="808"
-                  height="302"
-                />
-                <div class="feature-card-wrapper">
-                  <h3 class="headline-md">Discount Up to 50% for new user</h3>
-                  <p class="body-lg color-text-tertiary">
+                <picture class="feature-picture">
+                  <source
+                    srcset="images/discount_mob.webp"
+                    media="(max-width: 392px)"
+                  />
+                  <source
+                    srcset="images/discount_tablet.webp"
+                    media="(max-width: 1024px)"
+                  />
+                  <img
+                    class="feature-img"
+                    src="images/feature_discount.webp"
+                    alt="Discount example"
+                    width="808"
+                    height="302"
+                  />
+                </picture>
+                <div class="feature-card-wrapper big-card-wrapper">
+                  <h3 class="headline-md feature-card-headline">
+                    Discount Up to 50% for new user
+                  </h3>
+                  <p class="body-lg color-text-tertiary feature-card-text">
                     Don't miss out on this incredible opportunity to find your
                     dream home at unbeatable prices!
                   </p>
@@ -609,18 +685,28 @@
             </li>
             <li class="feature-card-big">
               <article class="feature-article">
-                <img
-                  class="feature-img"
-                  src="images/feature_search.webp"
-                  alt="Search example"
-                  width="820"
-                  height="302"
-                />
-                <div class="feature-card-wrapper">
-                  <h3 class="headline-md">
+                <picture class="feature-picture">
+                  <source
+                    srcset="images/search_mob.webp"
+                    media="(max-width: 392px)"
+                  />
+                  <source
+                    srcset="images/search_tablet.webp"
+                    media="(max-width: 1024px)"
+                  />
+                  <img
+                    class="feature-img"
+                    src="images/feature_search.webp"
+                    alt="Search example"
+                    width="820"
+                    height="302"
+                  />
+                </picture>
+                <div class="feature-card-wrapper big-card-wrapper">
+                  <h3 class="headline-md feature-card-headline">
                     Use Generated Search for find your Location
                   </h3>
-                  <p class="body-lg color-text-tertiary">
+                  <p class="body-lg color-text-tertiary feature-card-text">
                     Utilise Generated Search to pinpoint your precise
                     geographical location accurately and efficiently
                   </p>
@@ -629,16 +715,28 @@
             </li>
             <li class="feature-card-small">
               <article class="feature-article">
-                <img
-                  class="feature-img"
-                  src="images/feature_partners.webp"
-                  alt="Partners example"
-                  width="532"
-                  height="302"
-                />
+                <picture class="feature-picture">
+                  <source
+                    srcset="images/partners_mob.webp"
+                    media="(max-width: 392px)"
+                  />
+                  <source
+                    srcset="images/partners_tablet.webp"
+                    media="(max-width: 1024px)"
+                  />
+                  <img
+                    class="feature-img"
+                    src="images/feature_partners.webp"
+                    alt="Partners example"
+                    width="532"
+                    height="302"
+                  />
+                </picture>
                 <div class="feature-card-wrapper">
-                  <h3 class="headline-md">More Than 1 Million Partners</h3>
-                  <p class="body-lg color-text-tertiary">
+                  <h3 class="headline-md feature-card-headline">
+                    More Than 1 Million Partners
+                  </h3>
+                  <p class="body-lg color-text-tertiary feature-card-text">
                     Connecting over one million partners for real estate
                   </p>
                 </div>
@@ -716,7 +814,7 @@
       </section>
       <section id="contact" class="contact">
         <div class="contact-container">
-          <div>
+          <div class="form-container">
             <h2 class="subtitle-sm color-text-quaternary">
               Start Your Real Estate Journey Here
             </h2>
@@ -783,7 +881,7 @@
     <footer id="footer" class="footer">
       <div class="content-wrapper">
         <div class="footer-container">
-          <div class="footer-col footer-info">
+          <div class="footer-info">
             <a href="" class="footer-logo-link">
               <img
                 src="images/logoblack.svg"
@@ -796,7 +894,7 @@
                 Mai <span class="text-heavy">Home</span>
               </span>
             </a>
-            <p class="body-lg color-text-tertiary">
+            <p class="body-lg color-text-tertiary footer-text">
               Explore our extensive listings of properties, ranging from cozy
               apartments to luxurious estates, meticulously curated to cater to
               diverse tastes and lifestyles.
